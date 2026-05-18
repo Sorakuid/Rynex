@@ -19,6 +19,7 @@
 .DS_Store
 .idea
 *.pem
+AGENTS.md
 
 # debug
 npm-debug.log*

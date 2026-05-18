@@ -1,43 +1,34 @@
 "use client";
 
-import Image from "next/image";
-import { Session } from "next-auth";
-import { signIn, signOut } from "next-auth/react";
-import { useTranslations } from "next-intl";
+import { LogOut, User } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { signOut } from "@/lib/auth";
 
-type AuthControlsProps = {
-  session: Session | null;
-};
+interface AuthControlsProps {
+  session: any;
+}
 
 export const AuthControls = ({ session }: AuthControlsProps) => {
-  const t = useTranslations("home");
-
   if (!session)
     return (
-      <Button
-        className="cursor-pointer"
-        onClick={async () => await signIn("github")}
-      >
-        {t("signIn")}
-      </Button>
+      <a href="/auth/sign-in">
+        <Button variant="ghost" size="sm">
+          <User className="mr-2 h-4 w-4" />
+          Masuk
+        </Button>
+      </a>
     );
 
-  const { user } = session;
-
   return (
-    <>
-      <Image
-        className="overflow-hidden rounded-full"
-        src={`${user?.image}`}
-        alt={`${user?.name}`}
-        width={32}
-        height={32}
-      />
-      <Button className="cursor-pointer" onClick={async () => await signOut()}>
-        {t("signOut")}
+    <div className="flex items-center gap-4">
+      <span className="text-muted-foreground text-sm">
+        {session.user?.name || session.user?.email}
+      </span>
+      <Button variant="ghost" size="sm" onClick={() => signOut()}>
+        <LogOut className="mr-2 h-4 w-4" />
+        Keluar
       </Button>
-    </>
+    </div>
   );
 };
