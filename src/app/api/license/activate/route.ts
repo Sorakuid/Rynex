@@ -1,20 +1,25 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { activateLicense } from "@/lib/license";
+import { activateLicenseForKey } from "@/lib/license";
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { key, domain, ipAddress } = body;
+    const { licenseKey, domain, ipAddress, deviceHash } = body;
 
-    if (!key || !domain) {
+    if (!licenseKey || !domain) {
       return NextResponse.json(
-        { error: "Missing required fields: key, domain" },
+        { error: "Missing required fields: licenseKey, domain" },
         { status: 400 },
       );
     }
 
-    const result = await activateLicense(key, domain, ipAddress);
+    const result = await activateLicenseForKey(
+      licenseKey,
+      domain,
+      ipAddress || request.headers.get("x-forwarded-for") || undefined,
+      deviceHash,
+    );
 
     return NextResponse.json(result);
   } catch (error) {

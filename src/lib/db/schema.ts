@@ -1,8 +1,5 @@
 import {
-  boolean,
-  date,
   integer,
-  json,
   pgTable,
   serial,
   text,
@@ -10,94 +7,63 @@ import {
   varchar,
 } from "drizzle-orm/pg-core";
 
-// Users table
 export const users = pgTable("users", {
   id: serial("id").primaryKey(),
   name: varchar("name", { length: 255 }),
   email: varchar("email", { length: 255 }).notNull().unique(),
+  passwordHash: text("password_hash"),
   role: varchar("role", { length: 50 }).notNull().default("user"),
   createdAt: timestamp("created_at").defaultNow(),
 });
 
-// Products table (templates)
 export const products = pgTable("products", {
   id: serial("id").primaryKey(),
-  title: varchar("title", { length: 255 }).notNull(),
+  name: varchar("name", { length: 255 }).notNull(),
   slug: varchar("slug", { length: 255 }).notNull().unique(),
   description: text("description"),
-  shortDescription: text("short_description"),
-  price: integer("price").default(0),
-  category: varchar("category", { length: 100 }),
-  image: text("image"),
-  demoUrl: text("demo_url"),
-  techStack: json("tech_stack").$type<string[]>(),
-  features: json("features").$type<string[]>(),
-  isActive: boolean("is_active").default(true).notNull(),
-  isFeatured: boolean("is_featured").default(false).notNull(),
+  image: varchar("image", { length: 500 }),
+  type: varchar("type", { length: 50 }).notNull().default("template"),
+  version: varchar("version", { length: 50 }).notNull().default("1.0.0"),
+  price: integer("price").notNull().default(0),
   createdAt: timestamp("created_at").defaultNow(),
-  updatedAt: timestamp("updated_at").defaultNow(),
 });
 
-// Licenses table
 export const licenses = pgTable("licenses", {
   id: serial("id").primaryKey(),
-  key: varchar("key", { length: 255 }).notNull().unique(),
-  type: varchar("type", { length: 50 }).notNull(), // FREE, PRO, AGENCY, LIFETIME
-  userId: integer("user_id").references(() => users.id),
-  email: varchar("email", { length: 255 }).notNull(),
+  licenseKey: varchar("license_key", { length: 255 }).notNull().unique(),
   productId: integer("product_id").references(() => products.id),
+  customerEmail: varchar("customer_email", { length: 255 }).notNull(),
+  plan: varchar("plan", { length: 50 }).notNull().default("basic"),
+  status: varchar("status", { length: 50 }).notNull().default("inactive"),
   domain: varchar("domain", { length: 255 }),
-  maxDomains: integer("max_domains").default(1),
-  status: varchar("status", { length: 50 }).notNull().default("active"), // active, expired, revoked
+  issuedAt: timestamp("issued_at").defaultNow(),
   activatedAt: timestamp("activated_at"),
   expiresAt: timestamp("expires_at"),
+  maxActivations: integer("max_activations").notNull().default(1),
+  currentActivations: integer("current_activations").notNull().default(0),
+  signature: text("signature"),
   createdAt: timestamp("created_at").defaultNow(),
 });
 
-// License activations table
-export const licenseActivations = pgTable("license_activations", {
+export const activations = pgTable("activations", {
   id: serial("id").primaryKey(),
-  licenseId: integer("license_id").references(() => licenses.id),
-  domain: varchar("domain", { length: 255 }),
+  licenseId: integer("license_id")
+    .notNull()
+    .references(() => licenses.id),
+  domain: varchar("domain", { length: 255 }).notNull(),
   ipAddress: varchar("ip_address", { length: 45 }),
   activatedAt: timestamp("activated_at").defaultNow(),
+  deviceHash: varchar("device_hash", { length: 255 }),
 });
 
-// Custom projects table
-export const customProjects = pgTable("custom_projects", {
-  id: serial("id").primaryKey(),
-  name: varchar("name", { length: 255 }).notNull(),
-  email: varchar("email", { length: 255 }).notNull(),
-  description: text("description").notNull(),
-  budget: varchar("budget", { length: 100 }),
-  deadline: timestamp("deadline"),
-  status: varchar("status", { length: 50 }).notNull().default("pending"),
-  createdAt: timestamp("created_at").defaultNow(),
-});
-
-// Orders table
 export const orders = pgTable("orders", {
   id: serial("id").primaryKey(),
-  userId: integer("user_id").references(() => users.id),
-  licenseId: integer("license_id").references(() => licenses.id),
+  customerEmail: varchar("customer_email", { length: 255 }).notNull(),
+  productId: integer("product_id").references(() => products.id),
   amount: integer("amount").notNull(),
-  status: varchar("status", { length: 50 }).notNull().default("pending"),
-  createdAt: timestamp("created_at").defaultNow(),
-});
-
-// Settings table
-export const settings = pgTable("settings", {
-  id: serial("id").primaryKey(),
-  key: varchar("key", { length: 255 }).notNull().unique(),
-  value: text("value"),
-  updatedAt: timestamp("updated_at").defaultNow(),
-});
-
-// Audit logs table
-export const auditLogs = pgTable("audit_logs", {
-  id: serial("id").primaryKey(),
-  userId: integer("user_id").references(() => users.id),
-  action: varchar("action", { length: 255 }).notNull(),
-  details: json("details").$type<Record<string, any>>(),
-  createdAt: timestamp("created_at").defaultNow(),
+  paymentStatus: varchar("payment_status", { length: 50 })
+    .notNull()
+    .default("pending"),
+  paymentProvider: varchar("payment_provider", { length: 50 }),
+  purchasedAt: timestamp("purchased_at").defaultNow(),
 });

@@ -1,112 +1,173 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ClipboardList, Code, Lightbulb, Palette, Rocket } from "lucide-react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const steps = [
   {
-    icon: <Lightbulb className="text-primary h-5 w-5" />,
-    title: "Discovery",
-    description:
-      "Kami mempelajari bisnis, tujuan, dan visi Anda melalui riset mendalam dan sesi strategi.",
     number: "01",
+    title: "Discovery",
+    desc: "Riset mendalam tentang bisnis, audiens, dan kompetitor untuk membangun fondasi strategi yang kuat.",
+    details: [
+      "Analisis bisnis & kompetitor",
+      "Riset audiens target",
+      "Penentuan scope proyek",
+    ],
   },
   {
-    icon: <ClipboardList className="text-primary h-5 w-5" />,
-    title: "Perencanaan",
-    description:
-      "Pembuatan peta jalan strategis dengan arsitektur informasi, wireframe, dan perencanaan teknis.",
     number: "02",
+    title: "Architecture",
+    desc: "Perancangan struktur informasi, wireframe, dan arsitektur teknis sebagai cetak biru proyek.",
+    details: [
+      "Information architecture",
+      "Wireframe & user flow",
+      "Tech stack selection",
+    ],
   },
   {
-    icon: <Palette className="text-primary h-5 w-5" />,
-    title: "Desain",
-    description:
-      "Desain UI/UX presisi piksel dengan interaksi yang dipikirkan dan arahan visual premium.",
     number: "03",
+    title: "Build",
+    desc: "Eksekusi desain presisi piksel dan pengembangan kode berkualitas tinggi secara iteratif.",
+    details: [
+      "UI/UX pixel-perfect design",
+      "Front-end development",
+      "Back-end integration",
+    ],
   },
   {
-    icon: <Code className="text-primary h-5 w-5" />,
-    title: "Pengembangan",
-    description:
-      "Kode bersih dan berperforma tinggi dengan framework modern, pengujian menyeluruh, dan tinjauan iteratif.",
     number: "04",
+    title: "Launch",
+    desc: "Deployment terukur dengan QA menyeluruh, optimasi performa, dan monitoring pasca-luncur.",
+    details: [
+      "Quality assurance",
+      "Performance optimization",
+      "Deployment & monitoring",
+    ],
   },
   {
-    icon: <Rocket className="text-primary h-5 w-5" />,
-    title: "Peluncuran",
-    description:
-      "Deployment dengan monitoring, optimasi, dan dukungan berkelanjutan untuk kesuksesan jangka panjang.",
     number: "05",
+    title: "Optimize",
+    desc: "Pemeliharaan berkelanjutan dengan pembaruan, analitik, dan peningkatan berbasis data.",
+    details: [
+      "Performance analytics",
+      "Iterative improvements",
+      "Ongoing support",
+    ],
   },
 ];
 
-export function ProcessSection() {
+function ProcessStep({
+  step,
+  index,
+  total,
+  isLast,
+}: {
+  step: (typeof steps)[0];
+  index: number;
+  total: number;
+  isLast: boolean;
+}) {
   return (
-    <section className="spacious-section" id="process">
+    <motion.div
+      initial={{ opacity: 0, x: 30 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      className="group relative pb-16 pl-12 last:pb-0"
+    >
+      <div className="bg-primary/10 border-primary/30 absolute left-0 flex h-9 w-9 items-center justify-center rounded-full border backdrop-blur-sm">
+        <span className="text-primary font-mono text-xs font-bold">
+          {step.number}
+        </span>
+      </div>
+
+      {!isLast && (
+        <div className="from-primary/30 via-primary/10 absolute top-9 left-4 h-[calc(100%-1rem)] w-px bg-gradient-to-b to-transparent" />
+      )}
+
+      <div className="hover:border-primary/20 rounded-2xl border border-white/5 bg-white/[0.02] p-6 transition-all duration-500 hover:bg-white/[0.04] hover:shadow-[0_8px_40px_rgba(79,163,209,0.06)]">
+        <h3 className="group-hover:text-primary mb-1 text-xl font-bold transition-colors">
+          {step.title}
+        </h3>
+        <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+          {step.desc}
+        </p>
+        <ul className="space-y-1.5">
+          {step.details.map((detail) => (
+            <li
+              key={detail}
+              className="text-muted-foreground/60 flex items-center gap-2 font-mono text-xs"
+            >
+              <span className="bg-primary/20 h-1 w-1 rounded-full" />
+              {detail}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </motion.div>
+  );
+}
+
+export function ProcessSection() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  });
+
+  const progressHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
+  return (
+    <section
+      className="spacious-section relative"
+      id="process"
+      ref={containerRef}
+    >
       <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.5 }}
-          className="mb-16 text-center"
-        >
-          <span className="text-primary font-mono text-xs font-semibold tracking-widest uppercase">
-            Cara Kami Bekerja
-          </span>
-          <h2 className="mt-4 mb-4 text-4xl font-bold md:text-5xl">
-            Alur Kerja Kami
-          </h2>
-          <p className="text-muted-foreground mx-auto max-w-2xl text-lg">
-            Alur kerja terbukti dari konsep hingga peluncuran.
-          </p>
-        </motion.div>
+        <div className="grid grid-cols-1 gap-16 lg:grid-cols-5">
+          <div className="lg:sticky lg:top-32 lg:col-span-2 lg:self-start">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5 }}
+            >
+              <span className="text-primary font-mono text-xs font-semibold tracking-widest uppercase">
+                Cara Kami Bekerja
+              </span>
+              <h2 className="mt-4 mb-6 text-4xl leading-[1.05] font-bold md:text-5xl lg:text-6xl">
+                Alur Kerja
+                <br />
+                <span className="gradient-text">Kami</span>
+              </h2>
+              <p className="text-muted-foreground max-w-sm text-base leading-relaxed">
+                Alur kerja terbukti dari konsep hingga peluncuran. Setiap tahap
+                dirancang untuk memberikan hasil maksimal.
+              </p>
 
-        <div className="relative">
-          <div className="bg-border/50 absolute top-0 bottom-0 left-8 hidden w-px -translate-x-1/2 md:left-1/2 md:block" />
+              <div className="mt-8 flex items-center gap-3">
+                <div className="bg-border/30 h-1 w-24 overflow-hidden rounded-full">
+                  <motion.div
+                    className="bg-primary h-full w-full rounded-full"
+                    style={{ width: progressHeight }}
+                  />
+                </div>
+                <span className="text-muted-foreground font-mono text-[10px] tracking-wider uppercase">
+                  Progress
+                </span>
+              </div>
+            </motion.div>
+          </div>
 
-          <div className="space-y-12 md:space-y-16">
+          <div className="lg:col-span-3">
             {steps.map((step, i) => (
-              <motion.div
-                key={step.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className={`relative flex flex-col items-start gap-6 md:flex-row ${
-                  i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                }`}
-              >
-                <div
-                  className={`flex-1 ${i % 2 === 0 ? "md:text-right" : "md:text-left"}`}
-                >
-                  <div className="glass-card inline-block max-w-md rounded-2xl p-6">
-                    <div className="mb-3 flex items-center gap-3">
-                      <div className="bg-primary/10 flex h-10 w-10 items-center justify-center rounded-xl">
-                        {step.icon}
-                      </div>
-                      <div>
-                        <span className="text-primary font-mono text-xs">
-                          {step.number}
-                        </span>
-                        <h3 className="text-base font-semibold">
-                          {step.title}
-                        </h3>
-                      </div>
-                    </div>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {step.description}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="bg-primary/10 border-primary absolute left-1/2 hidden h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full border-2 md:flex">
-                  <div className="bg-primary h-2 w-2 rounded-full" />
-                </div>
-
-                <div className="flex-1" />
-              </motion.div>
+              <ProcessStep
+                key={step.number}
+                step={step}
+                index={i}
+                total={steps.length}
+                isLast={i === steps.length - 1}
+              />
             ))}
           </div>
         </div>

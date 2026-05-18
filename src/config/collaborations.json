@@ -1,0 +1,26 @@
+[
+  {
+    "id": "collab-1",
+    "project": "RYNEX Platform",
+    "partner": "Soraku Studio",
+    "type": "development",
+    "status": "active",
+    "description": "Full-stack development and design partnership for the RYNEX digital engineering platform."
+  },
+  {
+    "id": "collab-2",
+    "project": "Sorami Tools",
+    "partner": "Sorami",
+    "type": "research",
+    "status": "active",
+    "description": "Experimental tooling and internal product development within the Soraku ecosystem."
+  },
+  {
+    "id": "collab-3",
+    "project": "Community Events",
+    "partner": "Komunitas Soraku",
+    "type": "community",
+    "status": "active",
+    "description": "Monthly workshops, hackathons, and knowledge-sharing sessions for Indonesian developers."
+  }
+]

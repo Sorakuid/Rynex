@@ -15,6 +15,13 @@
       "when": 1749407322022,
       "tag": "0001_small_sabra",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1749600000000,
+      "tag": "0002_add_product_and_user_fields",
+      "breakpoints": true
     }
   ]
 }

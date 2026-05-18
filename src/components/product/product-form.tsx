@@ -89,7 +89,7 @@ export function ProductForm({ product }: { product?: any }) {
           });
 
       if (result.success) {
-        router.push("/admin/products");
+        router.push("/dashboard/products");
         router.refresh();
       }
     } catch (error) {

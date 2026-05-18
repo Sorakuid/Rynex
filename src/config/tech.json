@@ -1,0 +1,83 @@
+[
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "framework",
+    "description": "React framework for production-grade web applications with server-side rendering and static generation.",
+    "logo": "/partners/nextjs-icon.svg",
+    "website": "https://nextjs.org",
+    "featured": true
+  },
+  {
+    "id": "vercel",
+    "name": "Vercel",
+    "category": "deployment",
+    "description": "Deployment platform for frontend frameworks with edge functions and global CDN.",
+    "logo": "/partners/vercel-icon.svg",
+    "website": "https://vercel.com",
+    "featured": true
+  },
+  {
+    "id": "neon",
+    "name": "Neon",
+    "category": "database",
+    "description": "Serverless PostgreSQL with autoscaling, branching, and edge-ready architecture.",
+    "logo": "/partners/neon-icon.svg",
+    "website": "https://neon.tech",
+    "featured": true
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "category": "development",
+    "description": "Source control and collaboration platform powering open source and private development.",
+    "logo": "/partners/github-icon.svg",
+    "website": "https://github.com",
+    "featured": true
+  },
+  {
+    "id": "drizzle",
+    "name": "Drizzle",
+    "category": "database",
+    "description": "TypeScript ORM with SQL-like syntax, type safety, and serverless compatibility.",
+    "logo": "/partners/drizzle-icon.svg",
+    "website": "https://orm.drizzle.team",
+    "featured": true
+  },
+  {
+    "id": "framer",
+    "name": "Framer Motion",
+    "category": "development",
+    "description": "Production-ready animation library for React with declarative motion APIs.",
+    "logo": "/partners/framer-icon.svg",
+    "website": "https://framermotion.framer.website",
+    "featured": false
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind CSS",
+    "category": "development",
+    "description": "Utility-first CSS framework for rapid custom interface development.",
+    "logo": "/partners/tailwindcss.svg",
+    "website": "https://tailwindcss.com",
+    "featured": false
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "development",
+    "description": "Typed superset of JavaScript that compiles to clean, runtime-safe code.",
+    "logo": "/partners/typescript-icon.svg",
+    "website": "https://typescriptlang.org",
+    "featured": false
+  },
+  {
+    "id": "postgres",
+    "name": "PostgreSQL",
+    "category": "database",
+    "description": "Advanced open-source relational database with ACID compliance and extensibility.",
+    "logo": "/partners/postgresql.svg",
+    "website": "https://postgresql.org",
+    "featured": false
+  }
+]

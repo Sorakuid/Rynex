@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronDown, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
@@ -16,29 +16,29 @@ const floatingShapes = [
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden pt-24">
+    <section className="relative flex min-h-screen items-center overflow-hidden pt-32 pb-20">
       <div className="from-primary/5 absolute inset-0 bg-gradient-to-b via-transparent to-[#1C1E22]" />
       <div className="bg-primary/5 absolute top-1/4 right-1/4 h-[800px] w-[800px] animate-pulse rounded-full blur-[180px]" />
       <div className="bg-primary/3 absolute bottom-0 left-0 h-[500px] w-[500px] rounded-full blur-[150px]" />
 
       <div className="relative z-10 container mx-auto px-4">
-        <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-center gap-20 lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15 }}
-              className="glass text-primary mb-8 inline-flex items-center gap-2 rounded-full px-4 py-2 font-mono text-xs tracking-wider uppercase"
+              className="glass text-primary mb-10 inline-flex items-center gap-2 rounded-full px-4 py-2 font-mono text-xs tracking-wider uppercase"
             >
               <Sparkles className="h-3.5 w-3.5" />
               <span>Premium Digital Engineering</span>
             </motion.div>
 
-            <h1 className="mb-6 text-5xl leading-[0.95] font-bold tracking-tight md:text-7xl lg:text-8xl">
+            <h1 className="mb-8 text-5xl leading-[0.92] font-bold tracking-tight md:text-7xl lg:text-8xl">
               Kami Bangun
               <br />
               <span className="gradient-text">Digital</span>
@@ -46,13 +46,13 @@ export function HeroSection() {
               Experience
             </h1>
 
-            <p className="text-muted-foreground mb-10 max-w-xl text-lg leading-relaxed md:text-xl">
+            <p className="text-muted-foreground mb-12 max-w-xl text-lg leading-relaxed md:text-xl">
               RYNEX menghadirkan website premium, landing page, dashboard, dan
               produk digital skalabel yang mendorong pertumbuhan bisnis Anda.
               Ditenagai oleh Soraku Studio.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-5">
               <Link href="/contact">
                 <motion.div
                   whileHover={{ scale: 1.02 }}
@@ -82,30 +82,12 @@ export function HeroSection() {
                 </motion.div>
               </Link>
             </div>
-
-            <div className="mt-12 flex items-center gap-8 border-t border-white/5 pt-8">
-              {[
-                { value: "50+", label: "Proyek Selesai" },
-                { value: "30+", label: "Klien Puas" },
-                { value: "98%", label: "Kepuasan" },
-              ].map((stat) => (
-                <div
-                  key={stat.label}
-                  className="text-muted-foreground font-mono text-sm"
-                >
-                  <span className="text-foreground block text-lg font-semibold">
-                    {stat.value}
-                  </span>
-                  {stat.label}
-                </div>
-              ))}
-            </div>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="relative flex items-center justify-center"
           >
             <div className="relative aspect-square w-full max-w-[500px]">
@@ -166,7 +148,12 @@ export function HeroSection() {
         transition={{ delay: 1.5 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
-        <ChevronDown className="text-muted-foreground h-5 w-5 animate-bounce" />
+        <div className="flex flex-col items-center gap-2">
+          <span className="text-muted-foreground/50 font-mono text-[10px] tracking-[0.2em] uppercase">
+            Scroll
+          </span>
+          <div className="bg-border/50 h-8 w-px" />
+        </div>
       </motion.div>
     </section>
   );

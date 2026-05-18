@@ -3,9 +3,6 @@ import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Toaster } from "sonner";
 
-import { Footer } from "@/components/rynex/footer";
-import { Navbar } from "@/components/rynex/navbar";
-import { SmoothScroll } from "@/components/rynex/smooth-scroll";
 import { ThemeProvider } from "@/components/shared/theme-provider";
 import { fonts } from "@/lib/fonts";
 import { siteConfig } from "@/lib/site-config";
@@ -14,7 +11,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "RYNEX — Premium Digital Engineering by Soraku Studio",
+    default: "RYNEX | Premium Digital Engineering by Soraku Studio",
     template: `%s | RYNEX`,
   },
   description:
@@ -28,6 +25,8 @@ export const metadata: Metadata = {
     "soraku studio",
     "pembuatan website",
     "jasa website premium",
+    "Rynex",
+    "Rynex Studio",
   ],
   robots: { index: true, follow: true },
   icons: {
@@ -48,11 +47,7 @@ export default function RootLayout({
         className={cn("min-h-screen bg-[#1C1E22] font-sans antialiased", fonts)}
       >
         <ThemeProvider>
-          <SmoothScroll>
-            <Navbar />
-            <main>{children}</main>
-            <Footer />
-          </SmoothScroll>
+          {children}
           <Toaster
             position="bottom-right"
             toastOptions={{
@@ -63,6 +58,11 @@ export default function RootLayout({
               },
             }}
           />
+          <script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id="9c8db49a-ed9d-4248-bdd8-acdb8dedf7fe"
+          ></script>
         </ThemeProvider>
       </body>
     </html>

@@ -1,25 +1,22 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { revokeLicense } from "@/lib/license";
+import { updateLicenseStatus } from "@/lib/license";
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { licenseId } = body;
+    const { licenseKey } = body;
 
-    if (!licenseId) {
+    if (!licenseKey) {
       return NextResponse.json(
-        { error: "Missing required field: licenseId" },
+        { error: "Missing required field: licenseKey" },
         { status: 400 },
       );
     }
 
-    await revokeLicense(licenseId);
+    const result = await updateLicenseStatus(licenseKey, "revoked");
 
-    return NextResponse.json({
-      success: true,
-      message: "License revoked successfully",
-    });
+    return NextResponse.json(result);
   } catch (error) {
     console.error("Error revoking license:", error);
     return NextResponse.json(

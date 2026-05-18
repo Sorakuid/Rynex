@@ -19,7 +19,7 @@ export async function GET(request: NextRequest) {
     const customerLicenses = await db
       .select()
       .from(licenses)
-      .where(eq(licenses.email, email));
+      .where(eq(licenses.customerEmail, email));
 
     return NextResponse.json({
       success: true,

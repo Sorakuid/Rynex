@@ -283,7 +283,7 @@ function DropdownNav({
                 const isActive = pathname === item.href;
                 return (
                   <Link
-                    key={item.href}
+                    key={`${item.href}-${item.label}`}
                     href={item.href}
                     className={cn(
                       "block px-4 py-2.5 font-mono text-xs tracking-wider uppercase transition-colors duration-200",

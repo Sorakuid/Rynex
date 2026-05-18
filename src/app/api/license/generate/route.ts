@@ -1,38 +1,42 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { createLicense, generateLicenseKey } from "@/lib/license";
+import { createLicenseEntry } from "@/lib/license";
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { type, email, productId, domain, maxDomains, expiresInDays } = body;
+    const { plan, email, productId, domain, expiresInDays } = body;
 
-    if (!type || !email) {
+    if (!plan || !email) {
       return NextResponse.json(
-        { error: "Missing required fields: type, email" },
+        { error: "Missing required fields: plan, email" },
         { status: 400 },
       );
     }
 
-    const license = await createLicense({
-      type,
+    const validPlans = ["basic", "pro", "agency", "lifetime"];
+    if (!validPlans.includes(plan.toLowerCase())) {
+      return NextResponse.json(
+        { error: `Invalid plan. Must be one of: ${validPlans.join(", ")}` },
+        { status: 400 },
+      );
+    }
+
+    const license = await createLicenseEntry({
+      plan,
       email,
       productId,
       domain,
-      maxDomains,
       expiresInDays,
     });
 
     return NextResponse.json({
       success: true,
-      license: {
-        key: license.key,
-        type: license.type,
-        email: license.email,
-        domain: license.domain,
-        maxDomains: license.maxDomains,
-        expiresAt: license.expiresAt,
-      },
+      licenseKey: license.licenseKey,
+      signature: license.signature,
+      status: license.status,
+      plan: license.plan,
+      maxActivations: license.maxActivations,
     });
   } catch (error) {
     console.error("Error generating license:", error);

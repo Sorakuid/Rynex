@@ -1,20 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { verifyLicense } from "@/lib/license";
+import { validateLicense } from "@/lib/license";
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { key, domain } = body;
+    const { licenseKey, domain, productId } = body;
 
-    if (!key) {
+    if (!licenseKey) {
       return NextResponse.json(
-        { error: "Missing required field: key" },
+        { error: "Missing required field: licenseKey" },
         { status: 400 },
       );
     }
 
-    const result = await verifyLicense(key, domain);
+    const result = await validateLicense(licenseKey, domain, productId);
 
     return NextResponse.json(result);
   } catch (error) {

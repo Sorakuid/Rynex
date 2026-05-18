@@ -16,7 +16,7 @@ export async function getOrders(): Promise<OrderResult> {
     const allOrders = await db
       .select()
       .from(schema.orders)
-      .orderBy(schema.orders.createdAt);
+      .orderBy(schema.orders.purchasedAt);
     return { success: true, data: allOrders };
   } catch (error) {
     console.error("Error fetching orders:", error);
@@ -51,14 +51,14 @@ export async function createOrder(data: any): Promise<OrderResult> {
   }
 }
 
-export async function updateOrderStatus(
+export async function updateOrderPaymentStatus(
   id: number,
-  status: string,
+  paymentStatus: string,
 ): Promise<OrderResult> {
   try {
     const updatedOrder = await db
       .update(schema.orders)
-      .set({ status })
+      .set({ paymentStatus })
       .where(eq(schema.orders.id, id))
       .returning();
     return { success: true, data: updatedOrder };

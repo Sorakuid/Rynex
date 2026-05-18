@@ -1,0 +1,908 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "RYNEX" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "RYNEX" [ref=e5]
+      - generic [ref=e6]:
+        - link "Beranda" [ref=e7] [cursor=pointer]:
+          - /url: /
+        - link "Portofolio" [ref=e8] [cursor=pointer]:
+          - /url: /portfolio
+        - button "Layanan" [ref=e10]:
+          - text: Layanan
+          - img [ref=e11]
+        - button "Lainnya" [ref=e14]:
+          - text: Lainnya
+          - img [ref=e15]
+        - link "Kontak" [ref=e17] [cursor=pointer]:
+          - /url: /contact
+      - link "Mulai Proyek" [ref=e20] [cursor=pointer]:
+        - /url: /contact
+        - button "Mulai Proyek" [ref=e21]:
+          - text: Mulai Proyek
+          - img
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - img [ref=e31]
+            - generic [ref=e34]: Premium Digital Engineering
+          - heading "Kami Bangun Digital Experience" [level=1] [ref=e35]:
+            - text: Kami Bangun
+            - text: Digital
+            - text: Experience
+          - paragraph [ref=e36]: RYNEX menghadirkan website premium, landing page, dashboard, dan produk digital skalabel yang mendorong pertumbuhan bisnis Anda. Ditenagai oleh Soraku Studio.
+          - generic [ref=e37]:
+            - link "Mulai Proyek" [ref=e38] [cursor=pointer]:
+              - /url: /contact
+              - button "Mulai Proyek" [ref=e40]:
+                - text: Mulai Proyek
+                - img
+            - link "Lihat Karya" [ref=e41] [cursor=pointer]:
+              - /url: /portfolio
+              - button "Lihat Karya" [ref=e43]
+        - generic [ref=e57]: R
+      - generic [ref=e60]: Scroll
+    - generic [ref=e62]:
+      - generic [ref=e63]: — Powered by —
+      - generic [ref=e65]:
+        - link "Next.js Next.js" [ref=e66] [cursor=pointer]:
+          - /url: https://nextjs.org
+          - img "Next.js" [ref=e68]
+          - generic [ref=e69]: Next.js
+        - link "Vercel Vercel" [ref=e70] [cursor=pointer]:
+          - /url: https://vercel.com
+          - img "Vercel" [ref=e72]
+          - generic [ref=e73]: Vercel
+        - link "Neon Neon" [ref=e74] [cursor=pointer]:
+          - /url: https://neon.tech
+          - img "Neon" [ref=e76]
+          - generic [ref=e77]: Neon
+        - link "GitHub GitHub" [ref=e78] [cursor=pointer]:
+          - /url: https://github.com
+          - img "GitHub" [ref=e80]
+          - generic [ref=e81]: GitHub
+        - link "Drizzle Drizzle" [ref=e82] [cursor=pointer]:
+          - /url: https://orm.drizzle.team
+          - img "Drizzle" [ref=e84]
+          - generic [ref=e85]: Drizzle
+        - link "Framer Motion Framer Motion" [ref=e86] [cursor=pointer]:
+          - /url: https://framermotion.framer.website
+          - img "Framer Motion" [ref=e88]
+          - generic [ref=e89]: Framer Motion
+        - link "Tailwind CSS Tailwind CSS" [ref=e90] [cursor=pointer]:
+          - /url: https://tailwindcss.com
+          - img "Tailwind CSS" [ref=e92]
+          - generic [ref=e93]: Tailwind CSS
+        - link "TypeScript TypeScript" [ref=e94] [cursor=pointer]:
+          - /url: https://typescriptlang.org
+          - img "TypeScript" [ref=e96]
+          - generic [ref=e97]: TypeScript
+        - link "PostgreSQL PostgreSQL" [ref=e98] [cursor=pointer]:
+          - /url: https://postgresql.org
+          - img "PostgreSQL" [ref=e100]
+          - generic [ref=e101]: PostgreSQL
+        - link "Next.js Next.js" [ref=e102] [cursor=pointer]:
+          - /url: https://nextjs.org
+          - img "Next.js" [ref=e104]
+          - generic [ref=e105]: Next.js
+        - link "Vercel Vercel" [ref=e106] [cursor=pointer]:
+          - /url: https://vercel.com
+          - img "Vercel" [ref=e108]
+          - generic [ref=e109]: Vercel
+        - link "Neon Neon" [ref=e110] [cursor=pointer]:
+          - /url: https://neon.tech
+          - img "Neon" [ref=e112]
+          - generic [ref=e113]: Neon
+        - link "GitHub GitHub" [ref=e114] [cursor=pointer]:
+          - /url: https://github.com
+          - img "GitHub" [ref=e116]
+          - generic [ref=e117]: GitHub
+        - link "Drizzle Drizzle" [ref=e118] [cursor=pointer]:
+          - /url: https://orm.drizzle.team
+          - img "Drizzle" [ref=e120]
+          - generic [ref=e121]: Drizzle
+        - link "Framer Motion Framer Motion" [ref=e122] [cursor=pointer]:
+          - /url: https://framermotion.framer.website
+          - img "Framer Motion" [ref=e124]
+          - generic [ref=e125]: Framer Motion
+        - link "Tailwind CSS Tailwind CSS" [ref=e126] [cursor=pointer]:
+          - /url: https://tailwindcss.com
+          - img "Tailwind CSS" [ref=e128]
+          - generic [ref=e129]: Tailwind CSS
+        - link "TypeScript TypeScript" [ref=e130] [cursor=pointer]:
+          - /url: https://typescriptlang.org
+          - img "TypeScript" [ref=e132]
+          - generic [ref=e133]: TypeScript
+        - link "PostgreSQL PostgreSQL" [ref=e134] [cursor=pointer]:
+          - /url: https://postgresql.org
+          - img "PostgreSQL" [ref=e136]
+          - generic [ref=e137]: PostgreSQL
+    - generic [ref=e140]:
+      - generic [ref=e141]:
+        - img [ref=e143]
+        - generic [ref=e146]: 50+
+        - text: Proyek Selesai
+      - generic [ref=e147]:
+        - img [ref=e149]
+        - generic [ref=e153]: 30+
+        - text: Klien Bisnis
+      - generic [ref=e154]:
+        - img [ref=e156]
+        - generic [ref=e159]: 12+
+        - text: Negara
+      - generic [ref=e160]:
+        - img [ref=e162]
+        - generic [ref=e167]: 98%
+        - text: Kepuasan Klien
+    - generic [ref=e169]:
+      - generic [ref=e170]:
+        - text: Yang Kami Bangun
+        - heading "Layanan Digital" [level=2] [ref=e171]
+        - paragraph [ref=e172]: Dari landing page hingga platform kompleks, kami menghadirkan pengalaman web kelas produksi.
+      - generic [ref=e173]:
+        - generic [ref=e175]:
+          - img [ref=e177]
+          - heading "Landing Page" [level=3] [ref=e179]
+          - paragraph [ref=e180]: Landing page konversi tinggi yang dirancang untuk menangkap prospek dan mendorong pertumbuhan dengan desain premium dan performa cepat.
+          - generic [ref=e182]:
+            - text: Selengkapnya
+            - img [ref=e183]
+        - generic [ref=e186]:
+          - img [ref=e188]
+          - heading "Website Perusahaan" [level=3] [ref=e192]
+          - paragraph [ref=e193]: Website korporat multi-halaman profesional yang membangun otoritas merek dan menampilkan cerita bisnis Anda.
+        - generic [ref=e195]:
+          - img [ref=e197]
+          - heading "Dashboard" [level=3] [ref=e199]
+          - paragraph [ref=e200]: Antarmuka dashboard kaya data dengan analitik real-time, navigasi intuitif, dan arsitektur skalabel.
+        - generic [ref=e202]:
+          - img [ref=e204]
+          - heading "Antarmuka Produk" [level=3] [ref=e207]
+          - paragraph [ref=e208]: UI produk berpusat pada pengguna dengan interaksi mulus, mikro-animasi yang dipikirkan, dan eksekusi presisi piksel.
+        - generic [ref=e210]:
+          - img [ref=e212]
+          - heading "Sistem Kustom" [level=3] [ref=e216]
+          - paragraph [ref=e217]: Aplikasi web kustom end-to-end dibangun dengan framework modern, dioptimalkan untuk performa dan skala.
+      - link "Lihat Semua Layanan" [ref=e219] [cursor=pointer]:
+        - /url: /services
+        - generic [ref=e220]:
+          - text: Lihat Semua Layanan
+          - img [ref=e221]
+    - generic [ref=e224]:
+      - generic [ref=e225]:
+        - text: Produk Unggulan
+        - heading "Solusi Siap Pakai" [level=2] [ref=e226]
+        - paragraph [ref=e227]: Produk digital premium yang siap membantu bisnis Anda berkembang lebih cepat.
+      - generic [ref=e228]:
+        - generic [ref=e229]:
+          - img [ref=e231]
+          - heading "Company Profile Pro" [level=3] [ref=e233]
+          - paragraph [ref=e234]: Website perusahaan premium dengan CMS terintegrasi, multi-bahasa, dan performa optimal.
+          - generic [ref=e235]: Mulai Rp 5.000.000
+          - link "Detail Produk" [ref=e236] [cursor=pointer]:
+            - /url: /templates
+            - generic [ref=e237]:
+              - text: Detail Produk
+              - img [ref=e238]
+        - generic [ref=e240]:
+          - img [ref=e242]
+          - heading "Landing Page Konversi" [level=3] [ref=e244]
+          - paragraph [ref=e245]: Landing page siap-pakai dengan desain teruji A/B, optimasi SEO, dan analitik bawaan.
+          - generic [ref=e246]: Mulai Rp 2.500.000
+          - link "Detail Produk" [ref=e247] [cursor=pointer]:
+            - /url: /templates
+            - generic [ref=e248]:
+              - text: Detail Produk
+              - img [ref=e249]
+        - generic [ref=e251]:
+          - img [ref=e253]
+          - heading "Dashboard Analytics" [level=3] [ref=e259]
+          - paragraph [ref=e260]: Dashboard analitik real-time dengan visualisasi data interaktif dan laporan otomatis.
+          - generic [ref=e261]: Mulai Rp 8.000.000
+          - link "Detail Produk" [ref=e262] [cursor=pointer]:
+            - /url: /templates
+            - generic [ref=e263]:
+              - text: Detail Produk
+              - img [ref=e264]
+        - generic [ref=e266]:
+          - img [ref=e268]
+          - heading "E-Commerce Starter" [level=3] [ref=e271]
+          - paragraph [ref=e272]: Toko online siap-pakai dengan manajemen produk, pembayaran, dan dashboard penjualan.
+          - generic [ref=e273]: Mulai Rp 7.500.000
+          - link "Detail Produk" [ref=e274] [cursor=pointer]:
+            - /url: /templates
+            - generic [ref=e275]:
+              - text: Detail Produk
+              - img [ref=e276]
+    - generic [ref=e279]:
+      - generic [ref=e280]:
+        - text: Karya Unggulan
+        - heading "Proyek Terbaru" [level=2] [ref=e281]
+        - paragraph [ref=e282]: Setiap proyek mewakili komitmen kami terhadap kualitas dan presisi.
+      - generic [ref=e283]:
+        - generic [ref=e284] [cursor=pointer]:
+          - generic [ref=e285]:
+            - generic [ref=e286]: Dashboard
+            - img [ref=e287]
+          - heading "Nexus Dashboard" [level=3] [ref=e291]
+          - paragraph [ref=e292]: Platform analitik real-time dengan visualisasi data interaktif dan alat kolaborasi tim.
+          - generic [ref=e293]:
+            - generic [ref=e294]: Next.js
+            - generic [ref=e295]: TypeScript
+            - generic [ref=e296]: D3.js
+            - generic [ref=e297]: PostgreSQL
+        - generic [ref=e298] [cursor=pointer]:
+          - generic [ref=e299]:
+            - generic [ref=e300]: Landing Page
+            - img [ref=e301]
+          - heading "Bloom Landing" [level=3] [ref=e305]
+          - paragraph [ref=e306]: Halaman peluncuran produk konversi tinggi dengan animasi imersif dan alur checkout mulus.
+          - generic [ref=e307]:
+            - generic [ref=e308]: React
+            - generic [ref=e309]: Framer Motion
+            - generic [ref=e310]: Stripe
+            - generic [ref=e311]: Vercel
+        - generic [ref=e312] [cursor=pointer]:
+          - generic [ref=e313]:
+            - generic [ref=e314]: Web App
+            - img [ref=e315]
+          - heading "Forge Platform" [level=3] [ref=e319]
+          - paragraph [ref=e320]: Sistem manajemen proyek full-stack dengan pembaruan real-time, berbagi file, dan alur kerja tim.
+          - generic [ref=e321]:
+            - generic [ref=e322]: Next.js
+            - generic [ref=e323]: WebSocket
+            - generic [ref=e324]: Prisma
+            - generic [ref=e325]: Tailwind
+        - generic [ref=e326] [cursor=pointer]:
+          - generic [ref=e327]:
+            - generic [ref=e328]: Situs Perusahaan
+            - img [ref=e329]
+          - heading "Apex Corporate" [level=3] [ref=e333]
+          - paragraph [ref=e334]: Website korporat kelas enterprise dengan dukungan multi-bahasa dan manajemen konten dinamis.
+          - generic [ref=e335]:
+            - generic [ref=e336]: Next.js
+            - generic [ref=e337]: MDX
+            - generic [ref=e338]: i18n
+            - generic [ref=e339]: Sanity
+      - link "Lihat Portofolio Lengkap" [ref=e341] [cursor=pointer]:
+        - /url: /portfolio
+        - generic [ref=e342]:
+          - text: Lihat Portofolio Lengkap
+          - img [ref=e343]
+    - generic [ref=e350]:
+      - generic [ref=e352]:
+        - text: Cara Kami Membangun
+        - heading "How Rynex Builds" [level=2] [ref=e353]:
+          - text: How Rynex
+          - text: Builds
+        - paragraph [ref=e354]: Setiap proyek dibangun melalui proses terstruktur untuk memastikan hasil yang presisi, scalable, dan siap berkembang.
+        - generic [ref=e357]: Progress
+      - generic [ref=e358]:
+        - generic [ref=e360]:
+          - img [ref=e364]
+          - generic [ref=e368]:
+            - generic [ref=e370]: "01"
+            - generic [ref=e372]:
+              - heading "Discovery" [level=3] [ref=e373]
+              - paragraph [ref=e374]: Memahami kebutuhan secara presisi
+              - paragraph [ref=e375]: Kami memulai dengan memahami kebutuhan bisnis, target pengguna, tujuan digital, dan ruang lingkup proyek secara menyeluruh.
+              - generic [ref=e377]:
+                - generic [ref=e378]: konsultasi awal
+                - generic [ref=e380]: requirement gathering
+                - generic [ref=e382]: objective mapping
+                - generic [ref=e384]: scope definition
+        - generic [ref=e387]:
+          - img [ref=e391]
+          - generic [ref=e397]:
+            - generic [ref=e399]: "02"
+            - generic [ref=e401]:
+              - heading "System Blueprint" [level=3] [ref=e402]
+              - paragraph [ref=e403]: Menyusun struktur sebelum membangun
+              - paragraph [ref=e404]: Setiap proyek dirancang melalui perencanaan terstruktur, mulai dari sitemap, wireframe, user flow, hingga arsitektur teknis.
+              - generic [ref=e406]:
+                - generic [ref=e407]: sitemap
+                - generic [ref=e409]: wireframe
+                - generic [ref=e411]: user flow
+                - generic [ref=e413]: database planning
+                - generic [ref=e415]: architecture mapping
+        - generic [ref=e418]:
+          - img [ref=e422]
+          - generic [ref=e424]:
+            - generic [ref=e426]: "03"
+            - generic [ref=e428]:
+              - heading "Interface Craft" [level=3] [ref=e429]
+              - paragraph [ref=e430]: Merancang pengalaman visual yang presisi
+              - paragraph [ref=e431]: Kami merancang antarmuka modern dengan fokus pada hierarki visual, interaksi intuitif, dan pengalaman pengguna yang optimal.
+              - generic [ref=e433]:
+                - generic [ref=e434]: interface design
+                - generic [ref=e436]: responsive behavior
+                - generic [ref=e438]: motion planning
+                - generic [ref=e440]: interaction refinement
+        - generic [ref=e443]:
+          - img [ref=e447]
+          - generic [ref=e451]:
+            - generic [ref=e453]: "04"
+            - generic [ref=e455]:
+              - heading "Precision Build" [level=3] [ref=e456]
+              - paragraph [ref=e457]: Implementasi dengan standar production-ready
+              - paragraph [ref=e458]: Desain diterjemahkan menjadi sistem modular, cepat, responsif, dan scalable menggunakan teknologi modern.
+              - generic [ref=e460]:
+                - generic [ref=e461]: frontend engineering
+                - generic [ref=e463]: backend integration
+                - generic [ref=e465]: optimization
+                - generic [ref=e467]: quality assurance
+        - generic [ref=e470]:
+          - img [ref=e474]
+          - generic [ref=e479]:
+            - generic [ref=e481]: "05"
+            - generic [ref=e483]:
+              - heading "Launch & Evolution" [level=3] [ref=e484]
+              - paragraph [ref=e485]: Deploy, aktivasi, dan dukungan berkelanjutan
+              - paragraph [ref=e486]: Website diluncurkan dengan kesiapan penuh, termasuk deployment, licensing setup, dokumentasi, dan dukungan pasca-rilis.
+              - generic [ref=e488]:
+                - generic [ref=e489]: deployment
+                - generic [ref=e491]: activation
+                - generic [ref=e493]: documentation
+                - generic [ref=e495]: support
+    - generic [ref=e498]:
+      - generic [ref=e499]:
+        - text: Harga
+        - heading "Paket & Harga" [level=2] [ref=e500]
+        - paragraph [ref=e501]: Harga transparan tanpa biaya tersembunyi. Setiap paket dapat disesuaikan dengan kebutuhan Anda.
+      - generic [ref=e502]:
+        - generic [ref=e503]:
+          - generic [ref=e504]:
+            - heading "Starter" [level=3] [ref=e505]
+            - generic [ref=e506]: Rp 2.500.000
+            - paragraph [ref=e507]: Cocok untuk landing page atau website personal.
+          - list [ref=e508]:
+            - listitem [ref=e509]:
+              - img [ref=e510]
+              - text: 1 Halaman Utama
+            - listitem [ref=e512]:
+              - img [ref=e513]
+              - text: Desain Responsif
+            - listitem [ref=e515]:
+              - img [ref=e516]
+              - text: Optimasi SEO Dasar
+            - listitem [ref=e518]:
+              - img [ref=e519]
+              - text: Hosting 1 Tahun
+          - link "Pilih Paket" [ref=e521] [cursor=pointer]:
+            - /url: /contact
+            - button "Pilih Paket" [ref=e522]
+        - generic [ref=e523]:
+          - generic [ref=e524]: Populer
+          - generic [ref=e525]:
+            - heading "Professional" [level=3] [ref=e526]
+            - generic [ref=e527]: Rp 5.000.000
+            - paragraph [ref=e528]: Ideal untuk UKM yang ingin tampil profesional online.
+          - list [ref=e529]:
+            - listitem [ref=e530]:
+              - img [ref=e531]
+              - text: 5 Halaman
+            - listitem [ref=e533]:
+              - img [ref=e534]
+              - text: CMS Terintegrasi
+            - listitem [ref=e536]:
+              - img [ref=e537]
+              - text: Optimasi SEO Lanjutan
+            - listitem [ref=e539]:
+              - img [ref=e540]
+              - text: Integrasi Media Sosial
+            - listitem [ref=e542]:
+              - img [ref=e543]
+              - text: Form Kontak
+          - link "Pilih Paket" [ref=e545] [cursor=pointer]:
+            - /url: /contact
+            - button "Pilih Paket" [ref=e546]
+        - generic [ref=e547]:
+          - generic [ref=e548]:
+            - heading "Enterprise" [level=3] [ref=e549]
+            - generic [ref=e550]: Rp 10.000.000+
+            - paragraph [ref=e551]: Solusi lengkap untuk perusahaan dengan kebutuhan kompleks.
+          - list [ref=e552]:
+            - listitem [ref=e553]:
+              - img [ref=e554]
+              - text: Halaman Tak Terbatas
+            - listitem [ref=e556]:
+              - img [ref=e557]
+              - text: Sistem Kustom
+            - listitem [ref=e559]:
+              - img [ref=e560]
+              - text: Multi-bahasa
+            - listitem [ref=e562]:
+              - img [ref=e563]
+              - text: Dashboard Analitik
+            - listitem [ref=e565]:
+              - img [ref=e566]
+              - text: Dukungan Prioritas
+          - link "Pilih Paket" [ref=e568] [cursor=pointer]:
+            - /url: /contact
+            - button "Pilih Paket" [ref=e569]
+      - link "Lihat Semua Paket" [ref=e571] [cursor=pointer]:
+        - /url: /pricing
+        - generic [ref=e572]:
+          - text: Lihat Semua Paket
+          - img [ref=e573]
+    - generic [ref=e575]:
+      - generic [ref=e577]:
+        - text: Testimoni
+        - heading "Kata Klien Kami" [level=2] [ref=e578]
+        - paragraph [ref=e579]: Kepuasan klien adalah prioritas utama kami.
+      - generic [ref=e582]:
+        - generic [ref=e584]:
+          - generic [ref=e585]:
+            - img [ref=e586]
+            - generic [ref=e589]:
+              - img [ref=e590]
+              - img [ref=e592]
+              - img [ref=e594]
+              - img [ref=e596]
+              - img [ref=e598]
+          - paragraph [ref=e600]: “Landing page kami memiliki konversi 3x lipat setelah didesain ulang oleh RYNEX. Tim yang sangat profesional dan responsif.”
+          - generic [ref=e601]:
+            - paragraph [ref=e602]: Ahmad Fauzi
+            - paragraph [ref=e603]: CEO, TechInnovate
+        - generic [ref=e605]:
+          - generic [ref=e606]:
+            - img [ref=e607]
+            - generic [ref=e610]:
+              - img [ref=e611]
+              - img [ref=e613]
+              - img [ref=e615]
+              - img [ref=e617]
+              - img [ref=e619]
+          - paragraph [ref=e621]: “Dashboard yang mereka bangun untuk tim kami benar-benar transformatif. Data kini mudah dipahami dan keputusan bisa diambil lebih cepat.”
+          - generic [ref=e622]:
+            - paragraph [ref=e623]: Sara Wijaya
+            - paragraph [ref=e624]: COO, DataFlow Inc.
+        - generic [ref=e626]:
+          - generic [ref=e627]:
+            - img [ref=e628]
+            - generic [ref=e631]:
+              - img [ref=e632]
+              - img [ref=e634]
+              - img [ref=e636]
+              - img [ref=e638]
+              - img [ref=e640]
+          - paragraph [ref=e642]: “Proses kolaborasi yang sangat mulus. Mereka benar-benar memahami visi kami dan menerjemahkannya menjadi produk digital yang luar biasa.”
+          - generic [ref=e643]:
+            - paragraph [ref=e644]: Bambang Prasetyo
+            - paragraph [ref=e645]: Founder, KreArt Studio
+        - generic [ref=e647]:
+          - generic [ref=e648]:
+            - img [ref=e649]
+            - generic [ref=e652]:
+              - img [ref=e653]
+              - img [ref=e655]
+              - img [ref=e657]
+              - img [ref=e659]
+              - img [ref=e661]
+          - paragraph [ref=e663]: “Website perusahaan kami kini tampil jauh lebih profesional. Peningkatan traffic organik terlihat signifikan dalam 2 bulan pertama.”
+          - generic [ref=e664]:
+            - paragraph [ref=e665]: Dewi Lestari
+            - paragraph [ref=e666]: Marketing Lead, GrowLab
+        - generic [ref=e668]:
+          - generic [ref=e669]:
+            - img [ref=e670]
+            - generic [ref=e673]:
+              - img [ref=e674]
+              - img [ref=e676]
+              - img [ref=e678]
+              - img [ref=e680]
+              - img [ref=e682]
+          - paragraph [ref=e684]: “Sistem custom yang mereka buat mengotomatiskan workflow kami. Sekarang tim bisa fokus pada hal yang benar-benar penting.”
+          - generic [ref=e685]:
+            - paragraph [ref=e686]: Rudi Hartono
+            - paragraph [ref=e687]: CTO, BuildCore
+        - generic [ref=e689]:
+          - generic [ref=e690]:
+            - img [ref=e691]
+            - generic [ref=e694]:
+              - img [ref=e695]
+              - img [ref=e697]
+              - img [ref=e699]
+              - img [ref=e701]
+              - img [ref=e703]
+          - paragraph [ref=e705]: “Komunikasi yang transparan dan deliverable yang konsisten. Ini dia partner digital yang selama ini kami cari.”
+          - generic [ref=e706]:
+            - paragraph [ref=e707]: Maya Indah
+            - paragraph [ref=e708]: Product Manager, FinSolutions
+        - generic [ref=e710]:
+          - generic [ref=e711]:
+            - img [ref=e712]
+            - generic [ref=e715]:
+              - img [ref=e716]
+              - img [ref=e718]
+              - img [ref=e720]
+              - img [ref=e722]
+              - img [ref=e724]
+          - paragraph [ref=e726]: “Mereka tidak sekadar membuat website, tapi benar-benar memikirkan strategi di baliknya. Hasilnya jauh di atas ekspektasi.”
+          - generic [ref=e727]:
+            - paragraph [ref=e728]: Dimas Ardiansyah
+            - paragraph [ref=e729]: Founder, EduStart
+        - generic [ref=e731]:
+          - generic [ref=e732]:
+            - img [ref=e733]
+            - generic [ref=e736]:
+              - img [ref=e737]
+              - img [ref=e739]
+              - img [ref=e741]
+              - img [ref=e743]
+              - img [ref=e745]
+          - paragraph [ref=e747]: “Respon cepat, kode berkualitas, dan desain yang memukau. Kolaborasi yang sangat menyenangkan dari awal hingga akhir.”
+          - generic [ref=e748]:
+            - paragraph [ref=e749]: Putri Ayu
+            - paragraph [ref=e750]: Design Lead, CreativeSpace
+        - generic [ref=e752]:
+          - generic [ref=e753]:
+            - img [ref=e754]
+            - generic [ref=e757]:
+              - img [ref=e758]
+              - img [ref=e760]
+              - img [ref=e762]
+              - img [ref=e764]
+              - img [ref=e766]
+          - paragraph [ref=e768]: “Integrasi sistem yang rumit bisa diselesaikan dengan rapi dan terdokumentasi dengan baik. Tim teknisnya sangat kompeten.”
+          - generic [ref=e769]:
+            - paragraph [ref=e770]: Andi Saputra
+            - paragraph [ref=e771]: Engineering Manager, TechCorp
+        - generic [ref=e773]:
+          - generic [ref=e774]:
+            - img [ref=e775]
+            - generic [ref=e778]:
+              - img [ref=e779]
+              - img [ref=e781]
+              - img [ref=e783]
+              - img [ref=e785]
+              - img [ref=e787]
+          - paragraph [ref=e789]: “Portfolio template yang kami beli kualitasnya amazing. Tinggal diisi konten, langsung jadi. Value for money banget.”
+          - generic [ref=e790]:
+            - paragraph [ref=e791]: Rina Fitriani
+            - paragraph [ref=e792]: Freelancer, Creative ID
+        - generic [ref=e794]:
+          - generic [ref=e795]:
+            - img [ref=e796]
+            - generic [ref=e799]:
+              - img [ref=e800]
+              - img [ref=e802]
+              - img [ref=e804]
+              - img [ref=e806]
+              - img [ref=e808]
+          - paragraph [ref=e810]: “Landing page kami memiliki konversi 3x lipat setelah didesain ulang oleh RYNEX. Tim yang sangat profesional dan responsif.”
+          - generic [ref=e811]:
+            - paragraph [ref=e812]: Ahmad Fauzi
+            - paragraph [ref=e813]: CEO, TechInnovate
+        - generic [ref=e815]:
+          - generic [ref=e816]:
+            - img [ref=e817]
+            - generic [ref=e820]:
+              - img [ref=e821]
+              - img [ref=e823]
+              - img [ref=e825]
+              - img [ref=e827]
+              - img [ref=e829]
+          - paragraph [ref=e831]: “Dashboard yang mereka bangun untuk tim kami benar-benar transformatif. Data kini mudah dipahami dan keputusan bisa diambil lebih cepat.”
+          - generic [ref=e832]:
+            - paragraph [ref=e833]: Sara Wijaya
+            - paragraph [ref=e834]: COO, DataFlow Inc.
+        - generic [ref=e836]:
+          - generic [ref=e837]:
+            - img [ref=e838]
+            - generic [ref=e841]:
+              - img [ref=e842]
+              - img [ref=e844]
+              - img [ref=e846]
+              - img [ref=e848]
+              - img [ref=e850]
+          - paragraph [ref=e852]: “Proses kolaborasi yang sangat mulus. Mereka benar-benar memahami visi kami dan menerjemahkannya menjadi produk digital yang luar biasa.”
+          - generic [ref=e853]:
+            - paragraph [ref=e854]: Bambang Prasetyo
+            - paragraph [ref=e855]: Founder, KreArt Studio
+        - generic [ref=e857]:
+          - generic [ref=e858]:
+            - img [ref=e859]
+            - generic [ref=e862]:
+              - img [ref=e863]
+              - img [ref=e865]
+              - img [ref=e867]
+              - img [ref=e869]
+              - img [ref=e871]
+          - paragraph [ref=e873]: “Website perusahaan kami kini tampil jauh lebih profesional. Peningkatan traffic organik terlihat signifikan dalam 2 bulan pertama.”
+          - generic [ref=e874]:
+            - paragraph [ref=e875]: Dewi Lestari
+            - paragraph [ref=e876]: Marketing Lead, GrowLab
+        - generic [ref=e878]:
+          - generic [ref=e879]:
+            - img [ref=e880]
+            - generic [ref=e883]:
+              - img [ref=e884]
+              - img [ref=e886]
+              - img [ref=e888]
+              - img [ref=e890]
+              - img [ref=e892]
+          - paragraph [ref=e894]: “Sistem custom yang mereka buat mengotomatiskan workflow kami. Sekarang tim bisa fokus pada hal yang benar-benar penting.”
+          - generic [ref=e895]:
+            - paragraph [ref=e896]: Rudi Hartono
+            - paragraph [ref=e897]: CTO, BuildCore
+        - generic [ref=e899]:
+          - generic [ref=e900]:
+            - img [ref=e901]
+            - generic [ref=e904]:
+              - img [ref=e905]
+              - img [ref=e907]
+              - img [ref=e909]
+              - img [ref=e911]
+              - img [ref=e913]
+          - paragraph [ref=e915]: “Komunikasi yang transparan dan deliverable yang konsisten. Ini dia partner digital yang selama ini kami cari.”
+          - generic [ref=e916]:
+            - paragraph [ref=e917]: Maya Indah
+            - paragraph [ref=e918]: Product Manager, FinSolutions
+        - generic [ref=e920]:
+          - generic [ref=e921]:
+            - img [ref=e922]
+            - generic [ref=e925]:
+              - img [ref=e926]
+              - img [ref=e928]
+              - img [ref=e930]
+              - img [ref=e932]
+              - img [ref=e934]
+          - paragraph [ref=e936]: “Mereka tidak sekadar membuat website, tapi benar-benar memikirkan strategi di baliknya. Hasilnya jauh di atas ekspektasi.”
+          - generic [ref=e937]:
+            - paragraph [ref=e938]: Dimas Ardiansyah
+            - paragraph [ref=e939]: Founder, EduStart
+        - generic [ref=e941]:
+          - generic [ref=e942]:
+            - img [ref=e943]
+            - generic [ref=e946]:
+              - img [ref=e947]
+              - img [ref=e949]
+              - img [ref=e951]
+              - img [ref=e953]
+              - img [ref=e955]
+          - paragraph [ref=e957]: “Respon cepat, kode berkualitas, dan desain yang memukau. Kolaborasi yang sangat menyenangkan dari awal hingga akhir.”
+          - generic [ref=e958]:
+            - paragraph [ref=e959]: Putri Ayu
+            - paragraph [ref=e960]: Design Lead, CreativeSpace
+        - generic [ref=e962]:
+          - generic [ref=e963]:
+            - img [ref=e964]
+            - generic [ref=e967]:
+              - img [ref=e968]
+              - img [ref=e970]
+              - img [ref=e972]
+              - img [ref=e974]
+              - img [ref=e976]
+          - paragraph [ref=e978]: “Integrasi sistem yang rumit bisa diselesaikan dengan rapi dan terdokumentasi dengan baik. Tim teknisnya sangat kompeten.”
+          - generic [ref=e979]:
+            - paragraph [ref=e980]: Andi Saputra
+            - paragraph [ref=e981]: Engineering Manager, TechCorp
+        - generic [ref=e983]:
+          - generic [ref=e984]:
+            - img [ref=e985]
+            - generic [ref=e988]:
+              - img [ref=e989]
+              - img [ref=e991]
+              - img [ref=e993]
+              - img [ref=e995]
+              - img [ref=e997]
+          - paragraph [ref=e999]: “Portfolio template yang kami beli kualitasnya amazing. Tinggal diisi konten, langsung jadi. Value for money banget.”
+          - generic [ref=e1000]:
+            - paragraph [ref=e1001]: Rina Fitriani
+            - paragraph [ref=e1002]: Freelancer, Creative ID
+    - generic [ref=e1004]:
+      - generic [ref=e1005]:
+        - text: FAQ
+        - heading "Pertanyaan Umum" [level=2] [ref=e1006]
+        - paragraph [ref=e1007]: Jawaban untuk pertanyaan yang sering diajukan.
+      - generic [ref=e1008]:
+        - generic [ref=e1009]:
+          - button "01 Bagaimana alur kerja di RYNEX?" [ref=e1011]:
+            - generic [ref=e1012]:
+              - generic [ref=e1013]:
+                - generic [ref=e1014]: "01"
+                - text: Bagaimana alur kerja di RYNEX?
+              - img [ref=e1015]
+          - button "02 Berapa kali saya bisa revisi?" [ref=e1018]:
+            - generic [ref=e1019]:
+              - generic [ref=e1020]:
+                - generic [ref=e1021]: "02"
+                - text: Berapa kali saya bisa revisi?
+              - img [ref=e1022]
+          - button "03 Berapa lama waktu pengerjaan?" [ref=e1025]:
+            - generic [ref=e1026]:
+              - generic [ref=e1027]:
+                - generic [ref=e1028]: "03"
+                - text: Berapa lama waktu pengerjaan?
+              - img [ref=e1029]
+          - button "04 Bagaimana sistem pricing?" [ref=e1032]:
+            - generic [ref=e1033]:
+              - generic [ref=e1034]:
+                - generic [ref=e1035]: "04"
+                - text: Bagaimana sistem pricing?
+              - img [ref=e1036]
+          - button "05 Apakah ada layanan maintenance?" [ref=e1039]:
+            - generic [ref=e1040]:
+              - generic [ref=e1041]:
+                - generic [ref=e1042]: "05"
+                - text: Apakah ada layanan maintenance?
+              - img [ref=e1043]
+        - generic [ref=e1045]:
+          - button "06 Bagaimana sistem lisensi template?" [ref=e1047]:
+            - generic [ref=e1048]:
+              - generic [ref=e1049]:
+                - generic [ref=e1050]: "06"
+                - text: Bagaimana sistem lisensi template?
+              - img [ref=e1051]
+          - button "07 Metode pembayaran apa saja yang tersedia?" [ref=e1054]:
+            - generic [ref=e1055]:
+              - generic [ref=e1056]:
+                - generic [ref=e1057]: "07"
+                - text: Metode pembayaran apa saja yang tersedia?
+              - img [ref=e1058]
+          - button "08 Apakah saya memiliki source code penuh?" [ref=e1061]:
+            - generic [ref=e1062]:
+              - generic [ref=e1063]:
+                - generic [ref=e1064]: "08"
+                - text: Apakah saya memiliki source code penuh?
+              - img [ref=e1065]
+          - button "09 Teknologi apa yang digunakan untuk deployment?" [ref=e1068]:
+            - generic [ref=e1069]:
+              - generic [ref=e1070]:
+                - generic [ref=e1071]: "09"
+                - text: Teknologi apa yang digunakan untuk deployment?
+              - img [ref=e1072]
+          - button "10 Apakah ada dukungan setelah peluncuran?" [ref=e1075]:
+            - generic [ref=e1076]:
+              - generic [ref=e1077]:
+                - generic [ref=e1078]: "10"
+                - text: Apakah ada dukungan setelah peluncuran?
+              - img [ref=e1079]
+    - generic [ref=e1085]:
+      - generic [ref=e1086]: Kenapa Rynex
+      - generic [ref=e1087]:
+        - generic [ref=e1088]:
+          - heading "Kenapa Rynex Dibangun Berbeda" [level=2] [ref=e1089]:
+            - text: Kenapa Rynex
+            - text: Dibangun Berbeda
+          - paragraph [ref=e1090]: Kami merancang setiap pengalaman digital dengan presisi, performa, dan standar engineering modern.
+          - generic [ref=e1091]:
+            - generic [ref=e1093]: PRECISION
+            - generic [ref=e1095]: PERFORMANCE
+            - generic [ref=e1097]: CLARITY
+            - generic [ref=e1099]: CRAFT
+          - generic [ref=e1100]:
+            - link "Mulai Proyek" [ref=e1101] [cursor=pointer]:
+              - /url: /contact
+              - button "Mulai Proyek" [ref=e1102]:
+                - text: Mulai Proyek
+                - img
+            - link "Lihat Portfolio" [ref=e1103] [cursor=pointer]:
+              - /url: /portfolio
+              - button "Lihat Portfolio" [ref=e1104]
+        - generic [ref=e1106]:
+          - generic [ref=e1108]:
+            - img [ref=e1110]
+            - heading "Product-Grade Architecture" [level=3] [ref=e1112]
+            - paragraph [ref=e1113]: Every build follows scalable engineering principles with clean code architecture, modular components, and future-ready infrastructure.
+          - generic [ref=e1115]:
+            - img [ref=e1117]
+            - heading "Performance First" [level=3] [ref=e1120]
+            - paragraph [ref=e1121]: Optimized for speed, responsiveness, and efficiency. Sub-second load times, smooth interactions, and Lighthouse 90+ scores out of the box.
+          - generic [ref=e1123]:
+            - img [ref=e1125]
+            - heading "Premium Experience" [level=3] [ref=e1128]
+            - paragraph [ref=e1129]: Refined interface with intentional interaction design. Every micro-animation, every transition, every pixel serves a purpose.
+          - generic [ref=e1131]:
+            - img [ref=e1133]
+            - heading "Structured Workflow" [level=3] [ref=e1137]
+            - paragraph [ref=e1138]: Clear process from planning to launch. Transparent milestones, regular updates, and collaborative feedback loops keep you in control.
+          - generic [ref=e1140]:
+            - img [ref=e1142]
+            - heading "Licensing & Ownership" [level=3] [ref=e1144]
+            - paragraph [ref=e1145]: Secure deployment with modern license control. Full source code ownership, verified licensing system, and no vendor lock-in.
+    - generic [ref=e1150]:
+      - generic [ref=e1151]:
+        - img [ref=e1152]
+        - generic [ref=e1155]: Mari Bangun Bersama
+      - heading "Siap Membangun Masa Depan Digital?" [level=2] [ref=e1156]:
+        - text: Siap Membangun
+        - text: Masa Depan Digital?
+      - paragraph [ref=e1157]: Ceritakan tentang proyek Anda dan kami akan menciptakan solusi yang melampaui ekspektasi.
+      - generic [ref=e1158]:
+        - link "Mulai Proyek Anda" [ref=e1159] [cursor=pointer]:
+          - /url: /contact
+          - button "Mulai Proyek Anda" [ref=e1160]:
+            - text: Mulai Proyek Anda
+            - img
+        - link "Lihat Template" [ref=e1161] [cursor=pointer]:
+          - /url: /templates
+          - button "Lihat Template" [ref=e1162]
+  - contentinfo [ref=e1163]:
+    - generic [ref=e1164]:
+      - generic [ref=e1165]:
+        - generic [ref=e1166]:
+          - link "RYNEX" [ref=e1167] [cursor=pointer]:
+            - /url: /
+            - img "RYNEX" [ref=e1168]
+          - paragraph [ref=e1169]: Premium digital engineering by Soraku Studio. Kami membangun pengalaman web skalabel yang mendorong pertumbuhan bisnis Anda.
+          - generic [ref=e1170]:
+            - link "GitHub" [ref=e1171] [cursor=pointer]:
+              - /url: https://github.com
+              - img [ref=e1172]
+            - link "Instagram" [ref=e1175] [cursor=pointer]:
+              - /url: https://instagram.com
+              - img [ref=e1176]
+            - link "LinkedIn" [ref=e1179] [cursor=pointer]:
+              - /url: https://linkedin.com
+              - img [ref=e1180]
+            - link "X / Twitter" [ref=e1184] [cursor=pointer]:
+              - /url: https://x.com
+              - img [ref=e1185]
+            - link "Dribbble" [ref=e1187] [cursor=pointer]:
+              - /url: https://dribbble.com
+              - img [ref=e1188]
+        - generic [ref=e1193]:
+          - heading "Layanan" [level=4] [ref=e1194]
+          - list [ref=e1195]:
+            - listitem [ref=e1196]:
+              - link "Landing Page" [ref=e1197] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1198]:
+              - link "Website Perusahaan" [ref=e1199] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1200]:
+              - link "Dashboard" [ref=e1201] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1202]:
+              - link "Antarmuka Produk" [ref=e1203] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1204]:
+              - link "Sistem Kustom" [ref=e1205] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e1206]:
+          - heading "Perusahaan" [level=4] [ref=e1207]
+          - list [ref=e1208]:
+            - listitem [ref=e1209]:
+              - link "Tentang" [ref=e1210] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1211]:
+              - link "Portofolio" [ref=e1212] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1213]:
+              - link "Template" [ref=e1214] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1215]:
+              - link "Blog" [ref=e1216] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1217]:
+              - link "Kontak" [ref=e1218] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e1219]:
+          - heading "Sumber" [level=4] [ref=e1220]
+          - list [ref=e1221]:
+            - listitem [ref=e1222]:
+              - link "FAQ" [ref=e1223] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1224]:
+              - link "Harga" [ref=e1225] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1226]:
+              - link "Alur Kerja" [ref=e1227] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1228]:
+              - link "Testimoni" [ref=e1229] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e1230]:
+              - link "Privasi" [ref=e1231] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e1232]:
+        - paragraph [ref=e1233]: © 2026 Rynex by Soraku Studio. Hak cipta dilindungi.
+        - paragraph [ref=e1234]: Diciptakan dengan presisi.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e1240] [cursor=pointer]:
+    - img [ref=e1241]

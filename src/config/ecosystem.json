@@ -1,0 +1,29 @@
+[
+  {
+    "id": "rynex",
+    "name": "RYNEX",
+    "type": "platform",
+    "description": "Premium digital engineering platform by Soraku Studio. Builds websites, dashboards, and scalable digital solutions.",
+    "logo": "/Rynex.png",
+    "website": "/",
+    "featured": true
+  },
+  {
+    "id": "soraku-studio",
+    "name": "Soraku Studio",
+    "type": "studio",
+    "description": "Creative technology studio driving the entire ecosystem. Founder of RYNEX and Sorami.",
+    "logo": "/partners/soraku.svg",
+    "website": "https://soraku.studio",
+    "featured": true
+  },
+  {
+    "id": "sorami",
+    "name": "Sorami",
+    "type": "product",
+    "description": "Internal product incubator building experimental developer tools and utilities.",
+    "logo": "/partners/sorami.svg",
+    "website": "https://sorami.dev",
+    "featured": false
+  }
+]
