@@ -30,6 +30,9 @@ export function generateLicenseKey(plan: string): string {
 }
 
 export function signLicensePayload(payload: Record<string, unknown>): string {
+  if (!env.LICENSE_HMAC_KEY) {
+    throw new Error("LICENSE_HMAC_KEY is not configured");
+  }
   const hmac = createHmac("sha256", env.LICENSE_HMAC_KEY);
   hmac.update(JSON.stringify(payload));
   return hmac.digest("hex");

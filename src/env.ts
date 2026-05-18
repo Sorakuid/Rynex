@@ -3,10 +3,10 @@ import { z } from "zod";
 
 export const env = createEnv({
   server: {
-    DATABASE_URL: z.string().min(1),
-    APP_URL: z.string().url().min(1),
-    NEXTAUTH_SECRET: z.string().min(1),
-    LICENSE_HMAC_KEY: z.string().min(16),
+    DATABASE_URL: z.string().optional(),
+    APP_URL: z.string().url().optional(),
+    NEXTAUTH_SECRET: z.string().optional(),
+    LICENSE_HMAC_KEY: z.string().optional(),
     AUTH_GITHUB_ID: z.string().optional(),
     AUTH_GITHUB_SECRET: z.string().optional(),
     AUTH_GOOGLE_ID: z.string().optional(),

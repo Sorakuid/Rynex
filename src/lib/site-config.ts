@@ -1,10 +1,19 @@
 import { env } from "@/env";
 
 export const siteConfig = {
-  title: "Next.js Starter",
+  title: "RYNEX | Premium Digital Engineering",
   description:
-    "A Next.js starter template, packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, testing tools and more. Jumpstart your project with efficiency and style.",
-  keywords: ["Next.js", "TypeScript", "Tailwind CSS", "Next-auth"],
-  url: env.APP_URL,
+    "RYNEX menghadirkan website premium, landing page, dashboard, dan produk digital skalabel yang mendorong pertumbuhan bisnis Anda.",
+  keywords: [
+    "web development",
+    "landing page",
+    "ui/ux design",
+    "digital product",
+    "rynex",
+    "soraku studio",
+    "pembuatan website",
+    "jasa website premium",
+  ],
+  url: env.APP_URL || "https://rynex-two.vercel.app",
   googleSiteVerificationId: env.GOOGLE_SITE_VERIFICATION_ID || "",
 };
