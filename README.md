@@ -1,136 +1,250 @@
-<a href="https://next-starter-skolaczk.vercel.app/">
-<img src="/public/opengraph-image.jpg" alt="thumbnail">
-</a>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=0:08F7FE,25:09FBD3,50:FE53BB,75:F5D300,100:00ff99&text=RYNEX&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Premium%20Digital%20Engineering&descAlignY=55"/>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=22&pause=1000&color=08F7FE&center=true&vCenter=true&width=850&lines=⚡+Premium+Digital+Engineering+by+Soraku+Studio;🚀+Next.js+•+Tailwind+CSS+•+Drizzle+ORM;💻+Production-Ready+Web+Solutions;🎨+Modern+UI%2FUX+with+Framer+Motion;🔐+License+Management+System+Integrated"/>
+
 <p align="center">
-  <a href="#-features"><strong>Features</strong></a> ·
-  <a href="#-deployment"><strong>Deployment</strong></a> ·
-  <a href="#-getting-started"><strong>Getting started</strong></a> ·
-  <a href="#%EF%B8%8F-scripts-overview"><strong>Scripts overview</strong></a> ·
-  <a href="#-contribution"><strong>Contribution</strong></a> ·
-  <a href="#%EF%B8%8F-support"><strong>Support</strong></a>
+<img src="https://img.shields.io/badge/NEXT.JS-16-000000?style=for-the-badge&logo=next.js&logoColor=08F7FE"/>
+<img src="https://img.shields.io/badge/TAILWIND-v4-09FBD3?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
+<img src="https://img.shields.io/badge/DRIZZLE-ORM-FE53BB?style=for-the-badge&logo=drizzle&logoColor=white"/>
+<img src="https://img.shields.io/badge/AUTH-NEXT.AUTH-F5D300?style=for-the-badge&logo=nextauth&logoColor=white"/>
+<img src="https://img.shields.io/badge/LICENSE-MANAGEMENT-00ff99?style=for-the-badge"/>
 </p>
 
-## 🎉 Features
-- 🚀 Next.js 15 (App router)
-- ⚛️ React 19
-- 📘 Typescript
-- 🎨 Tailwind CSS 4 - Class sorting, merging and linting
-- 🛠️ Shadcn/ui - Customizable UI components
-- 💵 Stripe - Payment handler
-- 🔒 Next-auth - Easy authentication library for Next.js (GitHub provider)
-- 🛡️ Drizzle - ORM for node.js
-- 🔍 Zod - Schema validation library
-- 🧪 Jest & React Testing Library - Configured for unit testing
-- 🎭 Playwright - Configured for e2e testing
-- 📈 Absolute Import & Path Alias - Import components using `@/` prefix
-- 💅 Prettier - Code formatter
-- 🧹 Eslint - Code linting tool
-- 🐶 Husky & Lint Staged - Run scripts on your staged files before they are committed
-- 🔹 Icons - From Lucide
-- 🌑 Dark mode - With next-themes
-- 📝 Commitlint - Lint your git commits
-- 🤖 Github actions - Lint your code on PR
-- ⚙️ T3-env - Manage your environment variables
-- 🗺️ Sitemap & robots.txt
-- 💯 Perfect Lighthouse score
-- 💾 Neon database
-- 🌐 I18n with next-intl
+</div>
 
-## 🚀 Deployment
-Easily deploy your Next.js app with <a href="https://vercel.com/">Vercel</a> by clicking the button below:
+---
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Skolaczk/next-starter)
+# 🧠 PROJECT INFO
 
-## 🎯 Getting started
-### 1. Clone this template in one of three ways
+```yaml
+Name: RYNEX
+Version: 0.1.0
+Stack: Next.js 16 + Tailwind CSS v4
+ORM: Drizzle ORM with PostgreSQL
+Auth: NextAuth v5 (Credentials / GitHub / Google)
+Studio: Soraku Studio
+Locale: Indonesia 🇮🇩
 
-1. Using this repository as template
+Features:
+  - Landing page & company profile
+  - Product showcase with admin panel
+  - License management system (CRUD + validation)
+  - Customer portal (licenses, billing, domains, downloads)
+  - NextAuth with role-based access (owner / member)
+  - Secure API routes with HMAC + encryption
+  - Multi-route dashboard analytics
+  - Dark-first glassmorphism UI
+  - Responsive design (mobile ↔ desktop)
+  - SEO optimized with sitemap + robots
+```
 
-   ![use-this-template-button](https://github.com/Skolaczk/next-starter/assets/76774237/f25c9a29-41de-4865-aa38-c032b9346169)
+---
 
-2. Using `create-next-app`
+### ⚡ TECH STACK
 
-   ```bash
-   npx create-next-app -e https://github.com/Skolaczk/next-starter my-project-name
-   ```
+<div align="center">
 
-3. Using `git clone`
+<img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,nodejs,postgres,docker,git,github,linux,figma,vscode&perline=8"/>
 
-   ```bash
-   git clone https://github.com/Skolaczk/next-starter my-project-name
-   ```
-### 2. Install dependencies
+</div>
+
+### 🚀 FRONTEND
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind,css"/>
+
+</div>
+
+### ⚙️ BACKEND & DATABASE
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=nodejs,postgres,supabase,drizzle&perline=8"/>
+
+</div>
+
+### 🛠️ TOOLS & PLATFORMS
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=docker,git,github,linux,figma,vscode,vercel&perline=8"/>
+
+</div>
+
+---
+
+### 📦 GETTING STARTED
 
 ```bash
+# Clone repository
+git clone https://github.com/SorakuCommunity/rynex.git
+
+# Install dependencies
 npm install
-```
 
-### 3. Set up environment variables
-Create `.env` file and set env variables from `.env.example` file.
+# Copy environment variables
+cp .env.example .env.local
 
-### 4. Prepare husky
-It is required if you want husky to work
+# Run database migration
+npx drizzle-kit up:pg
 
-```bash
-npm run prepare
-```
-
-### 5. Run the dev server
-
-You can start the server using this command:
-
-```bash
+# Start development server
 npm run dev
 ```
 
-and open http://localhost:3000/ to see this app.
+---
 
-## 📁 Project structure
+### 🏗️ PROJECT STRUCTURE
 
-```bash
-.
-├── .github                         # GitHub folder
-├── .husky                          # Husky configuration
-├── prisma                          # Prisma schema and migrations
-├── public                          # Public assets folder
-└── src
-    ├── __tests__                   # Unit and e2e tests
-    ├── actions                     # Server actions
-    ├── app                         # Next JS App (App Router)
-    ├── components                  # React components
-    ├── lib                         # Functions and utilities
-    ├── styles                      # Styles folder
-    └── env.mjs                     # Env variables config file
+```
+src/
+├── app/
+│   ├── (public)/          # Public pages
+│   ├── (auth)/            # Authentication pages
+│   ├── (dashboard)/       # Admin dashboard
+│   └── api/               # API routes
+├── components/
+│   ├── dashboard/         # Dashboard UI
+│   ├── license/           # License management
+│   ├── partners/          # Partnership components
+│   ├── product/           # Product management
+│   ├── rynex/             # Homepage sections
+│   ├── shared/            # Shared utilities
+│   └── ui/                # Base UI components
+├── config/                # JSON config files
+├── lib/
+│   ├── db/                # Database schema & client
+│   ├── auth.ts            # NextAuth configuration
+│   ├── license.ts         # License utilities
+│   └── validators/        # Zod validators
+├── server/actions/        # Server actions
+├── styles/                # Global CSS
+└── types/                 # TypeScript definitions
 ```
 
-## ⚙️ Scripts overview
-The following scripts are available in the `package.json`:
-- `dev`: Run development server
-- `build`: Build the app
-- `start`: Run production server
-- `preview`: Run `build` and `start` commands together
-- `lint`: Lint the code using Eslint
-- `lint:fix`: Fix linting errors
-- `format:check`: Checks the code for proper formatting
-- `format:write`: Fix formatting issues
-- `typecheck`: Type-check TypeScript without emitting files
-- `test`: Run unit tests
-- `test:watch`: Run unit tests in watch mode
-- `e2e`: Run end-to-end tests
-- `e2e:ui`: Run end-to-end tests with UI
-- `postbuild`: Generate sitemap
-- `prepare`: Install Husky for managing Git hooks
+---
 
-## 🤝 Contribution
-To contribute, please follow these steps:
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes, and commit them.
-4. Push your changes to the forked repository.
-5. Create a pull request.
+### 🔑 FEATURES
 
-## ❤️ Support
+<div align="center">
 
-If you liked the project, I will appreciate if you leave a star. 🌟😊
+<table>
+<tr>
+<td align="center" width="33%">
 
-Made by <a href="https://michalskolak.netlify.app/">Michał Skolak</a> 
+### 🎨 Modern UI
+Dark-first glassmorphism design with Framer Motion animations, responsive across all devices.
+
+</td>
+<td align="center" width="33%">
+
+### 🔐 License System
+Full license management with HMAC signing, AES encryption, activation, suspension, and validation.
+
+</td>
+<td align="center" width="33%">
+
+### 👥 Auth & Roles
+NextAuth v5 with Credentials, GitHub, and Google OAuth. Role-based access (owner / member).
+
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+
+### 📊 Dashboard
+Multi-page admin dashboard with analytics, license management, product CRUD, and order tracking.
+
+</td>
+<td align="center" width="33%">
+
+### 🛍️ Products
+Product showcase with admin panel for managing listings, descriptions, pricing, and images.
+
+</td>
+<td align="center" width="33%">
+
+### 👤 Customer Portal
+Dedicated portal for customers to manage licenses, billing, domains, downloads, and profile.
+
+</td>
+</tr>
+<tr>
+<td align="center" width="33%">
+
+### 🤝 Partners
+Config-driven partnership system showcasing technology partners, business collaborations, and ecosystem.
+
+</td>
+<td align="center" width="33%">
+
+### 🌐 SEO Ready
+Optimized with metadata, sitemap, robots.txt, and semantic HTML structure.
+
+</td>
+<td align="center" width="33%">
+
+### 📈 Analytics
+Umami analytics integration for privacy-focused visitor tracking.
+
+</td>
+</tr>
+</table>
+
+</div>
+
+---
+
+### 🌌 CURRENT FOCUS
+
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=700&size=20&pause=1000&color=08F7FE&center=true&vCenter=true&width=700&lines=⚡+Building+Premium+Digital+Products;🚀+Refining+License+Management+System;🎨+Enhancing+UI+%26+UX;🔐+Strengthening+Security+%26+Encryption;📱+Expanding+Customer+Portal;🌐+Growing+Partner+Ecosystem"/>
+
+<br/>
+
+<img src="https://img.shields.io/badge/STATUS-ACTIVE-08F7FE?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/MODE-DEVELOPMENT-FE53BB?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/VERSION-0.1.0-F5D300?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/LICENSE-COMMERCIAL-00ff99?style=for-the-badge"/>
+
+</div>
+
+---
+
+### 🌐 CONNECT
+
+<div align="center">
+
+<a href="https://github.com/SorakuCommunity/rynex">
+<img src="https://img.shields.io/badge/Repository-0D1117?style=for-the-badge&logo=github&logoColor=08F7FE"/>
+</a>
+
+<a href="https://discord.gg/soraku">
+<img src="https://img.shields.io/badge/Discord-111827?style=for-the-badge&logo=discord&logoColor=5865F2"/>
+</a>
+
+<a href="https://www.soraku.id">
+<img src="https://img.shields.io/badge/Soraku-000000?style=for-the-badge&logo=vercel&logoColor=00ff99"/>
+</a>
+
+<a href="https://www.instagram.com/soraku.studio">
+<img src="https://img.shields.io/badge/Instagram-111827?style=for-the-badge&logo=instagram&logoColor=FE53BB"/>
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=180&section=footer&color=0:08F7FE,25:09FBD3,50:FE53BB,75:F5D300,100:00ff99"/>
+
+# ⚡ BUILD THE FUTURE
+
+### 「 Precision • Performance • Clarity • Craft 」
+
+</div>
