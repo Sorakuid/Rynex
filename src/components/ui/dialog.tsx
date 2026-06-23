@@ -55,7 +55,7 @@ function DialogContent({
   return (
     <div
       className={cn(
-        "rounded-2xl border border-white/10 bg-[#1C1E22]/95 p-6 shadow-xl backdrop-blur-2xl",
+        "border-border bg-background/95 rounded-2xl border p-6 shadow-xl backdrop-blur-2xl",
         className,
       )}
       {...props}

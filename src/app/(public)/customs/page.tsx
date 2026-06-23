@@ -28,7 +28,7 @@ export default function CustomProjectPage() {
               <Code className="text-primary h-12 w-12" />
               <Palette className="text-accent h-12 w-12" />
             </div>
-            <h1 className="mb-4 text-5xl font-bold">
+            <h1 className="mb-4 text-3xl font-bold md:text-5xl">
               Proyek <span className="gradient-text">Kustom</span>
             </h1>
             <p className="text-muted-foreground mx-auto max-w-2xl text-xl">

@@ -1,14 +1,8 @@
-import { AlertTriangle, CheckCircle, FileText, Scale } from "lucide-react";
+import { AlertTriangle, CheckCircle, FileText } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function TosPage() {
   return (
@@ -17,7 +11,7 @@ export default function TosPage() {
         <div className="container mx-auto max-w-4xl px-4">
           <div className="mb-12 text-center">
             <FileText className="text-primary mx-auto mb-4 h-16 w-16" />
-            <h1 className="mb-4 text-5xl font-bold">
+            <h1 className="mb-4 text-3xl font-bold md:text-5xl">
               Syarat & <span className="gradient-text">Ketentuan</span>
             </h1>
             <p className="text-muted-foreground text-xl">

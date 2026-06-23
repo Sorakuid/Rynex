@@ -1,8 +1,7 @@
-import { BusinessPartnersSection } from "@/components/partners/business-partners";
-import { CollaborationSection } from "@/components/partners/collaboration-section";
-import { EcosystemSection } from "@/components/partners/ecosystem-section";
-import { TechnologyPartnersSection } from "@/components/partners/technology-partners";
-import { BackgroundAnimation } from "@/components/shared/background-animation";
+import { BusinessPartnersSection } from "@/components/partners/business";
+import { CollaborationSection } from "@/components/partners/collaboration";
+import { EcosystemSection } from "@/components/partners/ecosystem";
+import { TechnologyPartnersSection } from "@/components/partners/techPartners";
 
 export const metadata = {
   title: "Partners & Ecosystem",
@@ -19,7 +18,7 @@ export default function PartnersPage() {
             <span className="text-primary font-mono text-xs font-semibold tracking-widest uppercase">
               Partners & Ecosystem
             </span>
-            <h1 className="mt-4 mb-4 text-5xl font-bold md:text-6xl">
+            <h1 className="mt-4 mb-4 text-3xl font-bold md:text-5xl md:text-6xl">
               Our <span className="gradient-text">Network</span>
             </h1>
             <p className="text-muted-foreground mx-auto max-w-2xl text-lg">

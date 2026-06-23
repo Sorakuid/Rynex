@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle, Code, Download } from "lucide-react";
+import { CheckCircle, Download } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -26,7 +26,7 @@ export default function DownloadPage() {
         <div className="container mx-auto max-w-2xl px-4">
           <div className="mb-12 text-center">
             <Download className="text-primary mx-auto mb-4 h-16 w-16" />
-            <h1 className="mb-4 text-5xl font-bold">
+            <h1 className="mb-4 text-3xl font-bold md:text-5xl">
               Download <span className="gradient-text">Template</span>
             </h1>
             <p className="text-muted-foreground text-xl">
@@ -90,7 +90,7 @@ export default function DownloadPage() {
                       <Download className="mr-2 h-4 w-4" />
                       Unduh Template (ZIP - 2.3 MB)
                     </Button>
-                    <Link href="/verify-license">
+                    <Link href="/verifyLicense">
                       <Button variant="outline" className="w-full">
                         Verifikasi Lisensi Lain
                       </Button>

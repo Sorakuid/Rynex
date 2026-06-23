@@ -81,7 +81,7 @@ export default function TemplatesPage() {
             <span className="text-primary font-mono text-xs font-semibold tracking-widest uppercase">
               Ready to Deploy
             </span>
-            <h1 className="mt-4 mb-4 text-5xl font-bold md:text-6xl">
+            <h1 className="mt-4 mb-4 text-3xl font-bold md:text-5xl md:text-6xl">
               Templates
             </h1>
             <p className="text-muted-foreground text-lg">

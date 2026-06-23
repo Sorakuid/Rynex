@@ -1,0 +1,113 @@
+{
+  "title": "Comparison",
+  "subtitle": "Compare plans, features, and capabilities to find the option that best fits your needs.",
+  "plans": ["Free", "Pro", "Agency"],
+  "recommended": "Pro",
+  "licenseTypes": {
+    "Free": "Evaluation License",
+    "Pro": "Commercial License",
+    "Agency": "Agency License"
+  },
+  "descriptions": {
+    "Free": "Ideal for testing and evaluation. Suitable for personal learning and development. Includes basic features and community access.",
+    "Pro": "Designed for freelancers, startups, and businesses. Includes one commercial domain activation, branding removal, premium features, lifetime updates, and priority support.",
+    "Agency": "Built for agencies, studios, and development teams. Unlimited project deployment, domain activations, white-label licensing, multi-client usage, dedicated support, and advanced customization."
+  },
+  "upgradeTriggers": [
+    "Commercial Domain Usage",
+    "Remove Rynex Branding",
+    "License Activation",
+    "Lifetime Updates",
+    "Premium Components",
+    "Premium Templates",
+    "White Label License",
+    "Multi-Client Usage",
+    "Dedicated Support"
+  ],
+  "features": [
+    {
+      "name": "Number of Projects",
+      "values": ["1", "1", "Unlimited"]
+    },
+    {
+      "name": "Commercial Domain Usage",
+      "values": ["✗", "✓", "✓"]
+    },
+    {
+      "name": "Remove Rynex Branding",
+      "values": ["✗", "✓", "✓"]
+    },
+    {
+      "name": "White Label License",
+      "values": ["✗", "✗", "✓"]
+    },
+    {
+      "name": "Source Code Access",
+      "values": ["✓", "✓", "✓"]
+    },
+    {
+      "name": "Documentation",
+      "values": ["✓", "✓", "✓"]
+    },
+    {
+      "name": "Lifetime Updates",
+      "values": ["✗", "✓", "✓"]
+    },
+    {
+      "name": "Premium Components",
+      "values": ["✗", "✓", "✓"]
+    },
+    {
+      "name": "Premium Templates",
+      "values": ["✗", "✓", "✓"]
+    },
+    {
+      "name": "Premium Sections",
+      "values": ["✗", "✓", "✓"]
+    },
+    {
+      "name": "License Activation",
+      "values": ["✗", "1 Domain", "Unlimited Domains"]
+    },
+    {
+      "name": "Client Project Usage",
+      "values": ["✗", "✓", "✓"]
+    },
+    {
+      "name": "Multi-Client Usage",
+      "values": ["✗", "✗", "✓"]
+    },
+    {
+      "name": "Priority Support",
+      "values": ["✗", "✓", "✓"]
+    },
+    {
+      "name": "Dedicated Support",
+      "values": ["✗", "✗", "✓"]
+    },
+    {
+      "name": "Community Access",
+      "values": ["✓", "✓", "✓"]
+    },
+    {
+      "name": "Feature Requests",
+      "values": ["✗", "✗", "✓"]
+    },
+    {
+      "name": "Early Access Features",
+      "values": ["✗", "✓", "✓"]
+    },
+    {
+      "name": "Team Access",
+      "values": ["✗", "✗", "✓"]
+    },
+    {
+      "name": "Resell Rights",
+      "values": ["✗", "✗", "Optional"]
+    },
+    {
+      "name": "Custom Branding",
+      "values": ["✗", "✗", "✓"]
+    }
+  ]
+}

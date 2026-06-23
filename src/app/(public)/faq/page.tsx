@@ -60,8 +60,8 @@ export default function FaqPage() {
       <section className="spacious-section section-divider">
         <div className="container mx-auto max-w-4xl px-4">
           <div className="mb-12 text-center">
-            <HelpCircle className="text-primary mx-auto mb-4 h-16 w-16" />
-            <h1 className="mb-4 text-5xl font-bold">
+            <HelpCircle className="text-primary mx-auto mb-4 h-12 w-12 md:h-16 md:w-16" />
+            <h1 className="mb-4 text-3xl font-bold md:text-5xl">
               FAQ - <span className="gradient-text">Tanya Jawab</span>
             </h1>
             <p className="text-muted-foreground mx-auto max-w-2xl text-xl">

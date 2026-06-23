@@ -19,7 +19,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-import { ThemeToggle } from "@/components/shared/theme-toggle";
+import { ThemeToggle } from "@/components/shared/themeToggle";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -47,13 +47,13 @@ export function Sidebar() {
     <>
       <button
         onClick={() => setMobileOpen(true)}
-        className="fixed top-4 left-4 z-40 flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-[#1C1E22]/80 backdrop-blur-xl md:hidden"
+        className="border-border bg-background/80 fixed top-4 left-4 z-40 flex h-10 w-10 items-center justify-center rounded-lg border backdrop-blur-xl md:hidden"
         aria-label="Buka sidebar"
       >
         <Menu className="text-foreground h-5 w-5" />
       </button>
 
-      <aside className="fixed inset-y-0 left-0 z-30 hidden w-64 flex-col border-r border-white/5 bg-[#1C1E22]/95 backdrop-blur-xl md:flex">
+      <aside className="border-border bg-background/95 fixed inset-y-0 left-0 z-30 hidden w-64 flex-col border-r backdrop-blur-xl md:flex">
         <SidebarContent
           pathname={pathname}
           isActive={isActive}
@@ -76,7 +76,7 @@ export function Sidebar() {
             animate={{ x: 0 }}
             exit={{ x: -300 }}
             transition={{ type: "spring", damping: 30, stiffness: 300 }}
-            className="fixed inset-y-0 left-0 z-50 w-64 border-r border-white/5 bg-[#1C1E22] shadow-xl md:hidden"
+            className="border-border bg-background fixed inset-y-0 left-0 z-50 w-64 border-r shadow-xl md:hidden"
           >
             <SidebarContent
               pathname={pathname}
@@ -91,11 +91,9 @@ export function Sidebar() {
 }
 
 function SidebarContent({
-  pathname,
   isActive,
   onClose,
 }: {
-  pathname: string;
   isActive: (href: string) => boolean;
   onClose: () => void;
 }) {

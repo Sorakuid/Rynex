@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.3.1] — 2026-06-23
+
+### Added
+- Reusable ComparisonTable component (`src/components/shared/comparison.tsx`)
+- Comparison data config (`src/config/comparison.json`) with 21 features, upgrade triggers, recommended plan
+- Comparison types (`src/types/comparison.ts`)
+- Drizzle migration 0006: `users`, `products`, `licenses`, `activations`, `orders` tables
+- `.gitignore` entries for IDE, OS, logs, turbo, dist, cache
+
+### Changed
+- Moved comparison section from homepage to `/pricing` page
+- Replaced local pricing ComparisonTable with shared component
+- Comparison table: sticky first column, glassmorphism, upgrade trigger highlight, "Most Popular" badge
+- Mobile comparison: accordion cards with recommended plan first, descriptions inline
+- How Rynex Builds layout: CSS Grid → Flexbox for reliable sticky positioning
+- Bumped version 0.2.1 → 0.3.1
+
+### Fixed
+- `autoFocus` a11y error in comment edit textarea (removed prop)
+- `disableTransitionOnChange` removed from ThemeProvider (React 19 script tag error)
+- `overflow-x: hidden` on body/html removed (broke `position: sticky` in Chromium)
+- Sticky positioning by removing `overflow-x-clip` from layout root
+- Dashboard Drizzle query error (`licenses` table did not exist)
+- Cleaned up 30+ unused import/variable warnings across 18 files
+- `pathname` prop removed from `SidebarContent` (declared but unused)
+
 ## [0.2.1] — 2026-06-17
 
 ### Added

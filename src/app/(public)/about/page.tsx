@@ -54,7 +54,7 @@ export default function AboutPage() {
             <span className="text-primary font-mono text-xs font-semibold tracking-widest uppercase">
               Tentang Rynex
             </span>
-            <h1 className="mt-4 mb-6 text-5xl font-bold md:text-6xl">
+            <h1 className="mt-4 mb-6 text-3xl font-bold md:text-5xl md:text-6xl">
               Kami Bangun
               <br />
               <span className="gradient-text">Keunggulan Digital</span>

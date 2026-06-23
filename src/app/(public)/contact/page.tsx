@@ -47,7 +47,7 @@ export default function ContactPage() {
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async (_data: FormData) => {
     await new Promise((resolve) => setTimeout(resolve, 1500));
     toast.success(
       "Message sent successfully! We'll be in touch within 24 hours.",
@@ -68,7 +68,7 @@ export default function ContactPage() {
             <span className="text-primary font-mono text-xs font-semibold tracking-widest uppercase">
               Get in Touch
             </span>
-            <h1 className="mt-4 mb-4 text-5xl font-bold md:text-6xl">
+            <h1 className="mt-4 mb-4 text-3xl font-bold md:text-5xl md:text-6xl">
               Contact Us
             </h1>
             <p className="text-muted-foreground text-lg">

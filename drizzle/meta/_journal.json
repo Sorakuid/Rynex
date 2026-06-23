@@ -22,6 +22,27 @@
       "when": 1749600000000,
       "tag": "0002_add_product_and_user_fields",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1749603600000,
+      "tag": "0003_add_blog_views",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1749686400000,
+      "tag": "0004_add_comments",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1750176000000,
+      "tag": "0005_add_ably_livesync",
+      "breakpoints": true
     }
   ]
 }

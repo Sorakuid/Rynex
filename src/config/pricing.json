@@ -1,0 +1,91 @@
+[
+  {
+    "name": "Starter",
+    "slug": "starter",
+    "price": "Rp 750.000",
+    "description": "Cocok untuk UMKM, Personal Brand, Portfolio",
+    "badge": null,
+    "popular": false,
+    "features": [
+      "5 Halaman",
+      "Desain Responsif Mobile & Desktop",
+      "SEO Dasar",
+      "Form Kontak & WhatsApp",
+      "Custom UI/UX",
+      "Google Maps Integration",
+      "Domain .com (1 Tahun)",
+      "1x Sesi Konsultasi",
+      "Free Deployment",
+      "1x Revisi"
+    ],
+    "cta": "Pilih Paket",
+    "href": "/contact"
+  },
+  {
+    "name": "Business",
+    "slug": "business",
+    "price": "Rp 1.500.000",
+    "description": "Cocok untuk Growing Business",
+    "badge": "Paling Populer",
+    "popular": true,
+    "features": [
+      "10 Halaman",
+      "Blog CMS",
+      "SEO Optimization",
+      "Google Analytics",
+      "Custom UI/UX Design",
+      "Integrasi Media Sosial",
+      "Domain .com (1 Tahun)",
+      "Hosting 1 Tahun",
+      "3x Sesi Konsultasi",
+      "Performance Optimization",
+      "3x Revisi"
+    ],
+    "cta": "Pilih Paket",
+    "href": "/contact"
+  },
+  {
+    "name": "Professional",
+    "slug": "professional",
+    "price": "Rp 2.500.000",
+    "description": "Cocok untuk Startup & Company",
+    "badge": null,
+    "popular": false,
+    "features": [
+      "Unlimited Halaman",
+      "Custom UI/UX Design",
+      "Dashboard Admin",
+      "Authentication & Roles",
+      "Database & API",
+      "Advanced SEO",
+      "Domain & Hosting Setup",
+      "Unlimited Konsultasi",
+      "Maintenance 1 Bulan",
+      "5x Revisi"
+    ],
+    "cta": "Pilih Paket",
+    "href": "/contact"
+  },
+  {
+    "name": "Enterprise",
+    "slug": "enterprise",
+    "price": "Custom",
+    "description": "Cocok untuk Large Company & Custom Projects",
+    "badge": null,
+    "popular": false,
+    "features": [
+      "CRM & ERP System",
+      "SaaS Platform",
+      "Marketplace / E-Commerce",
+      "AI Integration",
+      "Custom UI/UX Design",
+      "Multi-bahasa",
+      "Unlimited Consultation",
+      "Dedicated Support 24/7",
+      "Full Managed Service",
+      "SLA Guarantee"
+    ],
+    "cta": "Hubungi Tim",
+    "href": "/contact"
+  }
+]

@@ -1,22 +1,8 @@
-import {
-  DollarSign,
-  FileText,
-  HelpCircle,
-  Mail,
-  MapPin,
-  Phone,
-  Shield,
-} from "lucide-react";
+import { Mail, MapPin, Phone, Shield } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function PrivacyPage() {
   return (
@@ -25,7 +11,7 @@ export default function PrivacyPage() {
         <div className="container mx-auto max-w-4xl px-4">
           <div className="mb-12 text-center">
             <Shield className="text-primary mx-auto mb-4 h-16 w-16" />
-            <h1 className="mb-4 text-5xl font-bold">
+            <h1 className="mb-4 text-3xl font-bold md:text-5xl">
               Kebijakan <span className="gradient-text">Privasi</span>
             </h1>
             <p className="text-muted-foreground text-xl">

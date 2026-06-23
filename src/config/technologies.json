@@ -1,0 +1,12 @@
+[
+  { "name": "Next.js", "icon": "SiNextdotjs" },
+  { "name": "TypeScript", "icon": "SiTypescript" },
+  { "name": "Neon", "icon": "SiNeon" },
+  { "name": "PostgreSQL", "icon": "SiPostgresql" },
+  { "name": "Drizzle", "icon": "SiDrizzle" },
+  { "name": "GitHub", "icon": "SiGithub" },
+  { "name": "Cloudflare", "icon": "SiCloudflare" },
+  { "name": "React", "icon": "SiReact" },
+  { "name": "Tailwind CSS", "icon": "SiTailwindcss" },
+  { "name": "Vercel", "icon": "SiVercel" }
+]

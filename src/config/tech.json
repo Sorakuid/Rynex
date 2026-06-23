@@ -4,7 +4,7 @@
     "name": "Next.js",
     "category": "framework",
     "description": "React framework for production-grade web applications with server-side rendering and static generation.",
-    "logo": "/partners/nextjs-icon.svg",
+    "logo": "/images/stack/nextjs-icon.svg",
     "website": "https://nextjs.org",
     "featured": true
   },
@@ -13,7 +13,7 @@
     "name": "Vercel",
     "category": "deployment",
     "description": "Deployment platform for frontend frameworks with edge functions and global CDN.",
-    "logo": "/partners/vercel-icon.svg",
+    "logo": "/images/stack/vercel-icon.svg",
     "website": "https://vercel.com",
     "featured": true
   },
@@ -22,7 +22,7 @@
     "name": "Neon",
     "category": "database",
     "description": "Serverless PostgreSQL with autoscaling, branching, and edge-ready architecture.",
-    "logo": "/partners/neon-icon.svg",
+    "logo": "/images/stack/neon-icon.svg",
     "website": "https://neon.tech",
     "featured": true
   },
@@ -31,7 +31,7 @@
     "name": "GitHub",
     "category": "development",
     "description": "Source control and collaboration platform powering open source and private development.",
-    "logo": "/partners/github-icon.svg",
+    "logo": "/images/stack/github-icon.svg",
     "website": "https://github.com",
     "featured": true
   },
@@ -40,7 +40,7 @@
     "name": "Drizzle",
     "category": "database",
     "description": "TypeScript ORM with SQL-like syntax, type safety, and serverless compatibility.",
-    "logo": "/partners/drizzle-icon.svg",
+    "logo": "/images/stack/drizzle-icon.svg",
     "website": "https://orm.drizzle.team",
     "featured": true
   },
@@ -49,7 +49,7 @@
     "name": "Framer Motion",
     "category": "development",
     "description": "Production-ready animation library for React with declarative motion APIs.",
-    "logo": "/partners/framer-icon.svg",
+    "logo": "/images/stack/framer-icon.svg",
     "website": "https://framermotion.framer.website",
     "featured": false
   },
@@ -58,7 +58,7 @@
     "name": "Tailwind CSS",
     "category": "development",
     "description": "Utility-first CSS framework for rapid custom interface development.",
-    "logo": "/partners/tailwindcss.svg",
+    "logo": "/images/stack/tailwindcss.svg",
     "website": "https://tailwindcss.com",
     "featured": false
   },
@@ -67,7 +67,7 @@
     "name": "TypeScript",
     "category": "development",
     "description": "Typed superset of JavaScript that compiles to clean, runtime-safe code.",
-    "logo": "/partners/typescript-icon.svg",
+    "logo": "/images/stack/typescript-icon.svg",
     "website": "https://typescriptlang.org",
     "featured": false
   },
@@ -76,7 +76,7 @@
     "name": "PostgreSQL",
     "category": "database",
     "description": "Advanced open-source relational database with ACID compliance and extensibility.",
-    "logo": "/partners/postgresql.svg",
+    "logo": "/images/stack/postgresql.svg",
     "website": "https://postgresql.org",
     "featured": false
   }

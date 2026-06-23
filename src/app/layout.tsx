@@ -3,10 +3,8 @@ import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Toaster } from "sonner";
 
-import { ThemeProvider } from "@/components/shared/theme-provider";
-import { fonts } from "@/lib/fonts";
-import { siteConfig } from "@/lib/site-config";
-import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/shared/themeProvider";
+import { siteConfig } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -43,17 +41,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id" suppressHydrationWarning>
-      <body
-        className={cn("min-h-screen bg-[#1C1E22] font-sans antialiased", fonts)}
-      >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+        />
+      </head>
+      <body className="bg-background text-foreground min-h-screen font-sans antialiased">
         <ThemeProvider>
           {children}
           <Toaster
             position="bottom-right"
             toastOptions={{
               style: {
-                background: "rgba(28,30,34,0.9)",
-                border: "1px solid rgba(255,255,255,0.1)",
+                background: "color-mix(in srgb, var(--card) 95%, transparent)",
+                border: "1px solid var(--border)",
                 backdropFilter: "blur(20px)",
               },
             }}

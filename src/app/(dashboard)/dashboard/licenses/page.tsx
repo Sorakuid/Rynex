@@ -1,4 +1,4 @@
-import { LicenseManagementClient } from "@/components/license/license-management-client";
+import { LicenseManagementClient } from "@/components/license/licenseClient";
 import { db } from "@/lib/db";
 import { licenses } from "@/lib/db/schema";
 

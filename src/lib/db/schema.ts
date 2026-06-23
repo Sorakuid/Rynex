@@ -1,9 +1,12 @@
 import {
+  boolean,
   integer,
+  jsonb,
   pgTable,
   serial,
   text,
   timestamp,
+  uuid,
   varchar,
 } from "drizzle-orm/pg-core";
 
@@ -54,6 +57,50 @@ export const activations = pgTable("activations", {
   ipAddress: varchar("ip_address", { length: 45 }),
   activatedAt: timestamp("activated_at").defaultNow(),
   deviceHash: varchar("device_hash", { length: 255 }),
+});
+
+export const comments = pgTable("comments", {
+  id: serial("id").primaryKey(),
+  postSlug: varchar("post_slug", { length: 255 }).notNull(),
+  authorName: varchar("author_name", { length: 100 }).notNull(),
+  content: text("content").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at"),
+  deletedAt: timestamp("deleted_at"),
+});
+
+export const commentOutbox = pgTable("comment_outbox", {
+  id: serial("id").primaryKey(),
+  mutationId: uuid("mutation_id").notNull().unique(),
+  postSlug: varchar("post_slug", { length: 255 }).notNull(),
+  name: varchar("name", { length: 50 }).notNull(),
+  data: jsonb("data").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  processed: boolean("processed").default(false).notNull(),
+});
+
+export const blogViews = pgTable("blog_views", {
+  slug: varchar("slug", { length: 255 }).primaryKey(),
+  views: integer("views").notNull().default(0),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+export const outbox = pgTable("outbox", {
+  sequenceId: serial("sequence_id").primaryKey(),
+  mutationId: text("mutation_id").notNull(),
+  channel: text("channel").notNull(),
+  name: text("name").notNull(),
+  rejected: boolean("rejected").notNull().default(false),
+  data: jsonb("data"),
+  headers: jsonb("headers"),
+  lockedBy: text("locked_by"),
+  lockExpiry: timestamp("lock_expiry"),
+  processed: boolean("processed").notNull().default(false),
+});
+
+export const nodes = pgTable("nodes", {
+  id: text("id").primaryKey(),
+  expiry: timestamp("expiry").notNull(),
 });
 
 export const orders = pgTable("orders", {

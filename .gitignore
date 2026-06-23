@@ -50,3 +50,19 @@ sitemap-*.xml
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Runtime
+.turbo/
+/dist/
+.cache/

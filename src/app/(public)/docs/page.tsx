@@ -1,16 +1,10 @@
 "use client";
 
-import { AlertTriangle, BookOpen, Code, Terminal } from "lucide-react";
+import { BookOpen, Terminal } from "lucide-react";
 import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const docsSections = [
   {
@@ -104,7 +98,7 @@ export default function DocsPage() {
         <div className="container mx-auto max-w-6xl px-4">
           <div className="mb-12 text-center">
             <BookOpen className="text-primary mx-auto mb-4 h-16 w-16" />
-            <h1 className="mb-4 text-5xl font-bold md:text-6xl">
+            <h1 className="mb-4 text-3xl font-bold md:text-5xl md:text-6xl">
               Dokumentasi <span className="gradient-text">Soraku</span>
             </h1>
             <p className="text-muted-foreground text-xl">

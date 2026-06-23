@@ -5,8 +5,8 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { DomainList } from "@/components/license/domain-list";
-import { LicenseStatusBadge } from "@/components/license/license-status-badge";
+import { DomainList } from "@/components/license/domains";
+import { LicenseStatusBadge } from "@/components/license/statusBadge";
 import { Button } from "@/components/ui/button";
 import {
   Card,

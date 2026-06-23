@@ -1,7 +1,7 @@
 import { Footer } from "@/components/rynex/footer";
 import { Navbar } from "@/components/rynex/navbar";
-import { SmoothScroll } from "@/components/rynex/smooth-scroll";
-import { BackgroundAnimation } from "@/components/shared/background-animation";
+import { SmoothScroll } from "@/components/rynex/scroll";
+import { MobileBottomNavbar } from "@/components/ui/mobile/bottomNav";
 
 export default function PublicLayout({
   children,
@@ -10,9 +10,11 @@ export default function PublicLayout({
 }) {
   return (
     <SmoothScroll>
-      <BackgroundAnimation />
       <Navbar />
-      <main className="relative z-10">{children}</main>
+      <MobileBottomNavbar />
+      <main className="relative z-10 overflow-x-hidden pb-20 md:pb-0">
+        {children}
+      </main>
       <Footer />
     </SmoothScroll>
   );

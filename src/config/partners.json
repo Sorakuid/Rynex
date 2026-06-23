@@ -3,7 +3,7 @@
     "id": "soraku-studio",
     "name": "Soraku Studio",
     "role": "Strategic Partner",
-    "description": "Creative technology studio behind RYNEX, delivering premium digital solutions and design-driven development.",
+    "description": "Creative technology studio behind RYNEX. Premium digital solutions and design-driven development.",
     "logo": "/partners/soraku.svg",
     "website": "https://soraku.studio",
     "featured": true
@@ -12,18 +12,18 @@
     "id": "sorami",
     "name": "Sorami",
     "role": "Ecosystem Partner",
-    "description": "Internal product incubator focused on experimental tools and developer-first utilities.",
+    "description": "Internal incubator for experimental tools and developer utilities.",
     "logo": "/partners/sorami.svg",
     "website": "https://sorami.dev",
     "featured": true
   },
   {
-    "id": "komunitas-soraku",
-    "name": "Komunitas Soraku",
-    "role": "Community Partner",
-    "description": "Open community for Indonesian developers and designers to collaborate, learn, and build together.",
-    "logo": "/partners/komunitas-soraku.svg",
-    "website": "https://soraku.id",
-    "featured": false
+    "id": "shopify",
+    "name": "Shopify",
+    "role": "Technology Partner",
+    "description": "Global commerce platform. RYNEX is a trusted Shopify Partner for custom storefronts.",
+    "logo": "/partners/shopify/logo-color-dark-bg.svg",
+    "website": "https://www.shopify.com",
+    "featured": true
   }
 ]

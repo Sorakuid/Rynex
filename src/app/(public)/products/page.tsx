@@ -1,4 +1,4 @@
-import { Code, ShoppingCart, Zap } from "lucide-react";
+import { Code } from "lucide-react";
 import Link from "next/link";
 
 import { Badge } from "@/components/ui/badge";
@@ -17,7 +17,7 @@ export default function ProductsPage() {
       <section className="spacious-section section-divider">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="mb-12 text-center">
-            <h1 className="mb-4 text-5xl font-bold md:text-6xl">
+            <h1 className="mb-4 text-3xl font-bold md:text-5xl md:text-6xl">
               Template <span className="gradient-text">Premium</span>
             </h1>
             <p className="text-muted-foreground mx-auto max-w-2xl text-xl">
